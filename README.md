@@ -2,4 +2,4 @@
 
 tes 1
 kevin sangat jelek
-smkmckdanskcnoksnkcd
+delete system 32
