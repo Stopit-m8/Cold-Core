@@ -1,4 +1,5 @@
 # Cold-Core
 
 tes 1
-kevin sangat jelek
+kevin sangat jelek kontolitam
+
