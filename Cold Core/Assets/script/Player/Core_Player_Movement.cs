@@ -48,9 +48,8 @@ public class Core_Player_Movement : MonoBehaviour
         if (Core_Player_IsFacingRight && Core_Player_Movement_Horizontal < 0f || !Core_Player_IsFacingRight && Core_Player_Movement_Horizontal > 0f)
         {
             Core_Player_IsFacingRight = !Core_Player_IsFacingRight;
-            Vector3 local_Scale = transform.localScale;
-            local_Scale.x *= -1f;
-            transform.localScale = local_Scale;
+            transform.Rotate(0f, 180f, 0f);
+            
         }
     }
 }
