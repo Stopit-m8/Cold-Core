@@ -10,6 +10,10 @@ public class Core_Player_Movement : MonoBehaviour
     private float Core_Player_JumpingPower = 16f;
     private bool Core_Player_IsFacingRight = true;
 
+    private bool jump;
+
+    public Animator animator;
+
     [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] private Transform Ground_Check;
     [SerializeField] private LayerMask Ground_Layer; 
@@ -18,16 +22,27 @@ public class Core_Player_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        animator.SetFloat("Speed", Mathf.Abs(Core_Player_Movement_Horizontal));
+
+
+
         Core_Player_Movement_Horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, Core_Player_JumpingPower);
+            jump=true;
+            
+            animator.SetBool("Jump", true);
         }
 
         if (Input.GetButtonUp("Jump") && rigidBody.velocity.y > 0f)
         {
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, rigidBody.velocity.y * 0.5f);
+           jump=false;
+
+           animator.SetBool("Jump", false);
         }
 
         flip();
