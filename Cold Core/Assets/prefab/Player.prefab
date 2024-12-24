@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4189651915544363382}
   - component: {fileID: 4149509956117868522}
   - component: {fileID: 8174144905513258770}
-  - component: {fileID: 2457535737709503853}
   - component: {fileID: 2420055853947243710}
+  - component: {fileID: 6929554735615791735}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -175,25 +175,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45842bca1780fd048a2cc96b21077099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   rigidBody: {fileID: 4189651915544363382}
   Ground_Check: {fileID: 5699787390594996525}
   Ground_Layer:
     serializedVersion: 2
     m_Bits: 64
---- !u!114 &2457535737709503853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4673236397124180016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7af535ca8d2a7a4e85fa278ef0ed6c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthBar: {fileID: 0}
-  HealthAmount: 100
 --- !u!95 &2420055853947243710
 Animator:
   serializedVersion: 5
@@ -215,6 +202,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6929554735615791735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4673236397124180016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a98917dc54ca04f8cfc68d94e4d867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8010021421405947299
 GameObject:
   m_ObjectHideFlags: 0
