@@ -9,6 +9,8 @@ public class Tank_Patrol : MonoBehaviour
     private Rigidbody2D rb;
     private Transform currentPoint;
     public bool HasLOS;
+
+    public Animator animator;
     [SerializeField] private Collider2D LOS;
     [SerializeField] private float speed;
     // Start is called before the first frame update
@@ -22,14 +24,18 @@ public class Tank_Patrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
         Vector2 point = currentPoint.position - transform.position;
         if(currentPoint == PointB.transform)
         {
             rb.velocity = new Vector2(speed, 0f);
+        
         }
         else
         {
             rb.velocity = new Vector2(-speed, 0f);
+            
         }
 
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == PointB.transform)
@@ -41,6 +47,15 @@ public class Tank_Patrol : MonoBehaviour
         {
             flip();
             currentPoint = PointB.transform;
+        }
+
+        if(speed>0.01)
+        {
+            animator.SetBool("Speed", true);
+        }
+        else if (speed<0)
+        {
+            animator.SetBool("Speed", false);
         }
 
     }
