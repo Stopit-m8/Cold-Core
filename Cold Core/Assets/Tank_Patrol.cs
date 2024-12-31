@@ -8,10 +8,13 @@ public class Tank_Patrol : MonoBehaviour
     public GameObject PointB;
     private Rigidbody2D rb;
     private Transform currentPoint;
+    public bool HasLOS;
+    [SerializeField] private Collider2D LOS;
     [SerializeField] private float speed;
     // Start is called before the first frame update
     void Start()
     {
+        HasLOS = false;
         rb = GetComponent<Rigidbody2D>();
         currentPoint = PointB.transform;
     }
@@ -39,7 +42,21 @@ public class Tank_Patrol : MonoBehaviour
             flip();
             currentPoint = PointB.transform;
         }
+
     }
+
+    private void FixedUpdate()
+    {
+        //if (HasLOS == true)
+        //{
+        //    Debug.Log("Has LOS");
+        //}
+        //else
+        //{
+        //    Debug.Log("no LOS");
+        //}
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(PointA.transform.position, 0.5f);
@@ -53,4 +70,6 @@ public class Tank_Patrol : MonoBehaviour
         localScale.x *= -1;
         transform.localScale = localScale;
     }
+
+   
 }
