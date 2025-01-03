@@ -11,6 +11,9 @@ public class Tank_Patrol : MonoBehaviour
     public bool HasLOS;
 
     public Animator animator;
+    [SerializeField] private float time;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private Transform bulletTransform;
     [SerializeField] private Collider2D LOS;
     [SerializeField] private float speed;
     // Start is called before the first frame update
@@ -62,14 +65,21 @@ public class Tank_Patrol : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //if (HasLOS == true)
-        //{
-        //    Debug.Log("Has LOS");
-        //}
-        //else
-        //{
-        //    Debug.Log("no LOS");
-        //}
+        if (HasLOS == true)
+        {
+            rb.velocity = new Vector2(0f, 0f);
+            time += Time.deltaTime;
+            Debug.Log("has LOS");
+            if(time > 3)
+            {
+                Instantiate(bullet, bulletTransform.position, bulletTransform.rotation);
+                time = 0;
+            }
+        }
+        else
+        {
+            Debug.Log("no LOS");
+        }
     }
 
     private void OnDrawGizmos()
