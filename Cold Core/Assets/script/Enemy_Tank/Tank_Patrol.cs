@@ -9,11 +9,7 @@ public class Tank_Patrol : MonoBehaviour
     private Rigidbody2D rb;
     private Transform currentPoint;
     public bool HasLOS;
-
     public Animator animator;
-    [SerializeField] private float time;
-    [SerializeField] private GameObject bullet;
-    [SerializeField] private Transform bulletTransform;
     [SerializeField] private Collider2D LOS;
     [SerializeField] private float speed;
     // Start is called before the first frame update
@@ -27,60 +23,52 @@ public class Tank_Patrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
-        Vector2 point = currentPoint.position - transform.position;
-        if(currentPoint == PointB.transform)
-        {
-            rb.velocity = new Vector2(speed, 0f);
-        
-        }
-        else
-        {
-            rb.velocity = new Vector2(-speed, 0f);
-            
-        }
 
-        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == PointB.transform)
-        {
-            flip();
-            currentPoint = PointA.transform;
-        }
-        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == PointA.transform)
-        {
-            flip();
-            currentPoint = PointB.transform;
-        }
-
-        if(speed>0.01)
-        {
-            animator.SetBool("Speed", true);
-        }
-        else if (speed<0)
-        {
-            animator.SetBool("Speed", false);
-        }
-
-    }
-
-    private void FixedUpdate()
-    {
         if (HasLOS == true)
         {
             rb.velocity = new Vector2(0f, 0f);
-            time += Time.deltaTime;
             Debug.Log("has LOS");
-            if(time > 3)
-            {
-                Instantiate(bullet, bulletTransform.position, bulletTransform.rotation);
-                time = 0;
-            }
         }
         else
         {
             Debug.Log("no LOS");
+
+            Vector2 point = currentPoint.position - transform.position;
+            if (currentPoint == PointB.transform)
+            {
+                rb.velocity = new Vector2(speed, 0f);
+
+            }
+            else
+            {
+                rb.velocity = new Vector2(-speed, 0f);
+
+            }
+
+            if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == PointB.transform)
+            {
+                flip();
+                currentPoint = PointA.transform;
+            }
+            if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == PointA.transform)
+            {
+                flip();
+                currentPoint = PointB.transform;
+            }
+
+            if (speed > 0.01)
+            {
+                animator.SetBool("Speed", true);
+            }
+            else if (speed < 0)
+            {
+                animator.SetBool("Speed", false);
+            }
         }
+
     }
+
+
 
     private void OnDrawGizmos()
     {
@@ -91,9 +79,7 @@ public class Tank_Patrol : MonoBehaviour
 
     private void flip()
     {
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1;
-        transform.localScale = localScale;
+        transform.Rotate(0f, 180f, 0f);
     }
 
    

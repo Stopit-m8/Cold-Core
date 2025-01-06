@@ -14,13 +14,13 @@ public class col : MonoBehaviour
         {
             Tank.HasLOS = true;
         }
-        else
-        {
-            Tank.HasLOS = false;
-        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Tank.HasLOS = false;
+        tag = collision.gameObject.CompareTag("Player");
+        if (tag)
+        {
+            Tank.HasLOS = false;
+        }
     }
 }
