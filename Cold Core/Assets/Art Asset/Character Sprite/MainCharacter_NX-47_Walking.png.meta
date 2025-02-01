@@ -178,10 +178,10 @@ TextureImporter:
       name: MainCharacter_NX-47_Walking_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 156
-        height: 153
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,10 +199,10 @@ TextureImporter:
       name: MainCharacter_NX-47_Walking_1
       rect:
         serializedVersion: 2
-        x: 195
+        x: 192
         y: 0
-        width: 156
-        height: 141
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +220,10 @@ TextureImporter:
       name: MainCharacter_NX-47_Walking_2
       rect:
         serializedVersion: 2
-        x: 414
+        x: 384
         y: 0
-        width: 129
-        height: 153
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: MainCharacter_NX-47_Walking_3
       rect:
         serializedVersion: 2
-        x: 600
+        x: 576
         y: 0
-        width: 135
-        height: 165
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,10 +262,10 @@ TextureImporter:
       name: MainCharacter_NX-47_Walking_4
       rect:
         serializedVersion: 2
-        x: 774
+        x: 768
         y: 0
-        width: 159
-        height: 153
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,10 +283,10 @@ TextureImporter:
       name: MainCharacter_NX-47_Walking_5
       rect:
         serializedVersion: 2
-        x: 966
+        x: 960
         y: 0
-        width: 153
-        height: 141
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -304,10 +304,10 @@ TextureImporter:
       name: MainCharacter_NX-47_Walking_6
       rect:
         serializedVersion: 2
-        x: 1191
+        x: 1152
         y: 0
-        width: 120
-        height: 153
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,10 +325,10 @@ TextureImporter:
       name: MainCharacter_NX-47_Walking_7
       rect:
         serializedVersion: 2
-        x: 1365
+        x: 1344
         y: 0
-        width: 138
-        height: 165
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
