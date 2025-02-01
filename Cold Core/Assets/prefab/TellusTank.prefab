@@ -180,7 +180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 211448878866436862}
   m_Layer: 8
-  m_Name: Enemy_Tank
+  m_Name: TellusTank
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

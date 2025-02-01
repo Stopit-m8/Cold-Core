@@ -2424,6 +2424,7 @@ GameObject:
   - component: {fileID: 1350255358}
   - component: {fileID: 1350255357}
   - component: {fileID: 1350255356}
+  - component: {fileID: 1350255359}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2505,6 +2506,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1350255359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350255355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ee6cc4788a4064d9e434ab7dd617be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followSpeed: 4.5
+  yOffset: 1.2
+  target: {fileID: 1336104585}
 --- !u!1 &1351787273
 GameObject:
   m_ObjectHideFlags: 0
@@ -3034,7 +3050,7 @@ PrefabInstance:
       objectReference: {fileID: 1336104581}
     - target: {fileID: 2088452077352545717, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
       propertyPath: m_Name
-      value: Weapon
+      value: MG
       objectReference: {fileID: 0}
     - target: {fileID: 3521804722685918324, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
       propertyPath: m_Size.x
@@ -3328,7 +3344,7 @@ PrefabInstance:
     - target: {fileID: 6929554735615791735, guid: 8380c6fcd1baa10488c3a60b1d977e6b, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1252789516}
     - target: {fileID: 8010021421405947299, guid: 8380c6fcd1baa10488c3a60b1d977e6b, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -4811,7 +4827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2850066605995169713, guid: 3d0b6ea755d51f941848bdc1358b5a3f, type: 3}
       propertyPath: m_Name
-      value: Enemy_Tank
+      value: TellusTank
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
