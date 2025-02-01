@@ -241,7 +241,7 @@ TextureImporter:
       name: MainCharacter_NX-47_Idle_3
       rect:
         serializedVersion: 2
-        x: 606
+        x: 607
         y: 1
         width: 188
         height: 190
@@ -262,7 +262,7 @@ TextureImporter:
       name: MainCharacter_NX-47_Idle_4
       rect:
         serializedVersion: 2
-        x: 807
+        x: 808
         y: 0
         width: 177
         height: 190
