@@ -29,10 +29,10 @@ public class Core_Player_Movement : MonoBehaviour
 
     void Update()
     {
-        if (health.currentHealth <= 0)
-        {
-            rigidBody.velocity = Vector3.zero;
-        }
+        //if (health.currentHealth <= 0)
+        //{
+        //    rigidBody.velocity = Vector2(0f,0f);
+        //}
         animator.SetFloat("Speed", Mathf.Abs(Core_Player_Movement_Horizontal));
 
         Core_Player_Movement_Horizontal = Input.GetAxisRaw("Horizontal");

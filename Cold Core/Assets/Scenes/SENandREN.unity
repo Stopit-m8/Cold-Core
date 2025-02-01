@@ -3353,6 +3353,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1336104580}
+    - target: {fileID: 8174144905513258770, guid: 8380c6fcd1baa10488c3a60b1d977e6b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8261539997065426929, guid: 8380c6fcd1baa10488c3a60b1d977e6b, type: 3}
       propertyPath: m_Layer
       value: 3
