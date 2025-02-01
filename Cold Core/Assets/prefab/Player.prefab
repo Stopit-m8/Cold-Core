@@ -158,6 +158,8 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+  isFacingRight: 1
+  animator: {fileID: 2420055853947243710}
 --- !u!95 &2420055853947243710
 Animator:
   serializedVersion: 5
@@ -166,7 +168,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4673236397124180016}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 34d686e91e92d694c83e31b60d36b107, type: 2}
   m_CullingMode: 0
@@ -226,7 +228,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.11398703, y: -0.07902859}
+  m_Offset: {x: -0.112519525, y: -0.0922893}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -237,7 +239,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.63520074, y: 0.7743099}
+  m_Size: {x: 0.5941135, y: 0.7477885}
   m_EdgeRadius: 0
 --- !u!70 &4402858597385385348
 CapsuleCollider2D:
@@ -271,8 +273,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.1477931, y: -0.4839277}
-  m_Size: {x: 0.5481688, y: 0.032361034}
+  m_Offset: {x: -0.14060616, y: -0.49271762}
+  m_Size: {x: 0.6693225, y: 0.049941014}
   m_Direction: 1
 --- !u!1 &8010021421405947299
 GameObject:

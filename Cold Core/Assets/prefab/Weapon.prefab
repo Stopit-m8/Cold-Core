@@ -74,15 +74,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7207d4baf0f513a42bd4888129168fd9, type: 3}
+  m_Sprite: {fileID: -2079549142, guid: 7207d4baf0f513a42bd4888129168fd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.44, y: 0.96}
+  m_Size: {x: 4.5, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1451693164643336767
@@ -97,7 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e168891eea75d948b94a5e6031bad36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
-  bulletTransform: {fileID: 0}
+  bullet: {fileID: 1046796604878135222, guid: 28c66d65c4ee56045abf65cbf5310471, type: 3}
+  bulletTransform: {fileID: 8476231213595296825}
   canFire: 0
-  timeBeetweenFire: 0
+  timeBeweenFire: 1.5
+  playerMovementScript: {fileID: 0}
