@@ -12,6 +12,7 @@ public class Core_Player_Movement : MonoBehaviour
     private bool jump = false;
 
     public Animator animator;
+    public Player_Health health;
 
     [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] private Transform Ground_Check;
@@ -28,6 +29,10 @@ public class Core_Player_Movement : MonoBehaviour
 
     void Update()
     {
+        if (health.currentHealth <= 0)
+        {
+            rigidBody.velocity = Vector3.zero;
+        }
         animator.SetFloat("Speed", Mathf.Abs(Core_Player_Movement_Horizontal));
 
         Core_Player_Movement_Horizontal = Input.GetAxisRaw("Horizontal");

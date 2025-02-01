@@ -7,6 +7,7 @@ public class Player_Health : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public Player_HealthBar healthBar;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +30,12 @@ public class Player_Health : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
-        if (currentHealth < 0)
+        if (currentHealth <= 0)
         {
             currentHealth = 0;
+            animator.SetBool("PlayerIsDead", true);
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
