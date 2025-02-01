@@ -181,12 +181,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1859912463, guid: bd5cf2c7ebf0698418b2794e37a1073e, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 54173f0e186cba04c9f255780fdc6822, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.020833, y: 1.3958334}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -243,8 +243,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.020833, y: 1.3958334}
-    newSize: {x: 8.020833, y: 1.3958334}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1500,6 +1500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Tank
       objectReference: {fileID: 0}
+    - target: {fileID: 2850066605995169713, guid: 3d0b6ea755d51f941848bdc1358b5a3f, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1510,6 +1514,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1350255358}
+  - {fileID: 1753300125}
   - {fileID: 1319454308}
   - {fileID: 54624073}
   - {fileID: 56075832}
@@ -1518,4 +1523,3 @@ SceneRoots:
   - {fileID: 1101386513}
   - {fileID: 1509641318}
   - {fileID: 6986992437250594100}
-  - {fileID: 1753300125}

@@ -7,6 +7,7 @@ TagManager:
   - Bullet
   - Enemy
   - Enemy_LOS
+  - Enemy_Bullet
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: LOS
+    uniqueID: 2602764307
+    locked: 0
+  - name: Player
+    uniqueID: 672023213
+    locked: 0
+  - name: Bullet
+    uniqueID: 2577795331
+    locked: 0
+  - name: Weapon
+    uniqueID: 2889382665
     locked: 0

@@ -25,11 +25,27 @@ public class Player_Health : MonoBehaviour
         {
             TakeDamage(20);
         }
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        if (currentHealth < 0)
+        {
+            currentHealth = 0;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy_Bullet"))
+        {
+            TakeDamage(20);
+        }
     }
 
     //private void OnCollisionEnter2D(Collision2D collision)
     //{
-        
+
     //}
 
     void TakeDamage(int damage)

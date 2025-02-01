@@ -14,7 +14,11 @@ public class Enemy_Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+        
     }
     // Start is called before the first frame update
     void Start()

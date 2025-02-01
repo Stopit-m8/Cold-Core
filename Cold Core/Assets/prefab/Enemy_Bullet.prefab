@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6666659096516673188}
   m_Layer: 0
   m_Name: Enemy_Bullet
-  m_TagString: Untagged
+  m_TagString: Enemy_Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,7 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaad5139502b11c42860b8248699350b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tank: {fileID: 0}
   Force: 10
   DTime: 3
   Damage: 10
