@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy_Health : MonoBehaviour
 {
-    public int eMaxHealth = 100;
+    public int eMaxHealth = 150;
     public int eCurrentHealth;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class Enemy_Health : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            TakeDamage(20);
+            TakeDamage(9);
         }
     }
     // Update is called once per frame
