@@ -449,3 +449,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9fb2e3253d1e8e4fa289c069ae6f348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eMaxHealth: 150
+  eCurrentHealth: 0
+  item: {fileID: 6490715458084336178, guid: 46a73e92f9e86ae4282e249bfbba867d, type: 3}

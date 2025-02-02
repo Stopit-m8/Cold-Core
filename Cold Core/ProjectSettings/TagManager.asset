@@ -10,6 +10,7 @@ TagManager:
   - Enemy_Bullet
   - Insta_Kill
   - Ground
+  - ItemHealth
   layers:
   - Default
   - TransparentFX

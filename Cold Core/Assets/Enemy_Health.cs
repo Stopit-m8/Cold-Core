@@ -6,6 +6,7 @@ public class Enemy_Health : MonoBehaviour
 {
     public int eMaxHealth = 150;
     public int eCurrentHealth;
+    [SerializeField] private GameObject item;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,8 @@ public class Enemy_Health : MonoBehaviour
     {
         if (eCurrentHealth <= 0)
         {
+            eCurrentHealth = 0;
+            Instantiate(item,transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

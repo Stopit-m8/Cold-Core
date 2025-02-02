@@ -53,6 +53,10 @@ public class Player_Health : MonoBehaviour
         {
             TakeDamage(currentHealth);
         }
+        if (collision.gameObject.CompareTag("ItemHealth"))
+        {
+            Heal(20);
+        }
     }
 
     void TakeDamage(int damage)
