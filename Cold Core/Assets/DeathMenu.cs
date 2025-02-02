@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class DeathMenuController : MonoBehaviour
 {
+
+   
     public GameObject deathMenuUI;  // Reference to the Death Menu UI
     public Button retryButton;      // Reference to the Retry Button
     public Button exitButton;       // Reference to the Exit Button
@@ -13,6 +15,7 @@ public class DeathMenuController : MonoBehaviour
     {
         // Initially hide the death menu UI
         deathMenuUI.SetActive(false);
+     
 
         // Add listeners to buttons
         retryButton.onClick.AddListener(Retry);
@@ -22,6 +25,7 @@ public class DeathMenuController : MonoBehaviour
     // This method is called from the Player_Health script when the player dies
     public void ShowDeathMenu()
     {
+       
         // Start the coroutine to show the death menu with a delay
         StartCoroutine(ShowDeathMenuAfterDelay(2f));  // 2 seconds delay
     }
