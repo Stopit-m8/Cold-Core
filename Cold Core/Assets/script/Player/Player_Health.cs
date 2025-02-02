@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player_Health : MonoBehaviour
@@ -8,14 +6,14 @@ public class Player_Health : MonoBehaviour
     public int currentHealth;
     public Player_HealthBar healthBar;
     public Animator animator;
-    // Start is called before the first frame update
+    public DeathMenuController deathMenuController;  // Reference to the Death Menu Controller
+
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.setMaxHealth(maxHealth);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Z))
@@ -30,12 +28,19 @@ public class Player_Health : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+
+        // If health reaches 0, trigger death and show the death menu
         if (currentHealth <= 0)
         {
             currentHealth = 0;
             animator.SetBool("PlayerIsDead", true);
-        }
 
+            // Show the death menu
+            if (deathMenuController != null)
+            {
+                deathMenuController.ShowDeathMenu();  // Show the death menu
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -45,11 +50,6 @@ public class Player_Health : MonoBehaviour
             TakeDamage(20);
         }
     }
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-
-    //}
 
     void TakeDamage(int damage)
     {
