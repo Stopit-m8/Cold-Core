@@ -40,5 +40,9 @@ public class bulletScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.layer == 6)
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Enemy_LOS
   - Enemy_Bullet
+  - Insta_Kill
+  - Ground
   layers:
   - Default
   - TransparentFX
