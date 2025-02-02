@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SENandREN.unity
     guid: 141caaffe8cae9c4aaeaec5f7576a194
+  - enabled: 1
+    path: Assets/Scenes/LevelMenu.unity
+    guid: bfae548a4918b9c4f84b817c2d4e8f6b
   m_configObjects: {}

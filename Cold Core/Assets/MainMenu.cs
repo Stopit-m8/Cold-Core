@@ -8,9 +8,21 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
 
+    public void lv1()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void lv2()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void lv3()
+    {
+        SceneManager.LoadScene(1);
+    }
     public void uhoh()
     {
         SceneManager.LoadScene(2);
