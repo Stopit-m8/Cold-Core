@@ -3467,6 +3467,7 @@ GameObject:
   - component: {fileID: 1900007590}
   - component: {fileID: 1900007589}
   - component: {fileID: 1900007588}
+  - component: {fileID: 1900007593}
   m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
@@ -4781,6 +4782,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &1900007593
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900007586}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5e4dc3812bd93f4589f6ee4f3bd9533, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &6986992437250594100
 PrefabInstance:
   m_ObjectHideFlags: 0

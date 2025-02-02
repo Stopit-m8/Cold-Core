@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8476231213595296825}
   - component: {fileID: 3521804722685918324}
   - component: {fileID: 1451693164643336767}
+  - component: {fileID: 8615200037465059132}
   m_Layer: 0
   m_Name: MG
   m_TagString: Untagged
@@ -101,4 +102,26 @@ MonoBehaviour:
   bulletTransform: {fileID: 8476231213595296825}
   canFire: 0
   timeBeweenFire: 1.5
+  animator: {fileID: 8615200037465059132}
   playerMovementScript: {fileID: 0}
+--- !u!95 &8615200037465059132
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088452077352545717}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 23f98a1036c937949ab4036a386ee2de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

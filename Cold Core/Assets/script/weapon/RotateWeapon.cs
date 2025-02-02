@@ -11,6 +11,9 @@ public class RotateWeapon : MonoBehaviour
     public bool canFire;
     private float timer;
     public float timeBeweenFire;
+    public Animator animator;
+
+
 
     // Reference to the player's facing direction
     public EXPPlayer_Movement playerMovementScript;
@@ -27,6 +30,7 @@ public class RotateWeapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+            
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
 
         // Calculate the direction of the mouse relative to the weapon
@@ -41,19 +45,24 @@ public class RotateWeapon : MonoBehaviour
         // Handle firing
         if (!canFire)
         {
+            
             timer += Time.deltaTime;
             if (timer > timeBeweenFire)
             {
+                 animator.SetBool("canFire",false);
                 canFire = true;
                 timer = 0;
+                
             }
         }
 
         // Fire bullet if mouse button is held
         if (Input.GetMouseButton(0) && canFire)
         {
+            animator.SetBool("canFire",true);
             canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+           
         }
 
         // Flip the weapon based on the player's facing direction
