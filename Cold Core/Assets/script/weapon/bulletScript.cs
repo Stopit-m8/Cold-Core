@@ -10,6 +10,8 @@ public class bulletScript : MonoBehaviour
     private Rigidbody2D rb;
     public float force;
     private float timer;
+
+    public Animator animator;
     [SerializeField] private float destroyBullet;
     // Start is called before the first frame update
     void Start()
@@ -27,21 +29,26 @@ public class bulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         timer += Time.deltaTime;
         if (timer > destroyBullet)
         {
             Destroy(gameObject);
             timer = 0;
+    
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            animator.SetBool("boom", true);
             Destroy(gameObject);
         }
         if (collision.gameObject.layer == 6)
         {
+            animator.SetBool("boom", false);
             Destroy(gameObject);
         }
     }
