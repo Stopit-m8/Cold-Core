@@ -26,7 +26,7 @@ public class MainMenu : MonoBehaviour
     }
     public void lv3()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
     public void uhoh()
     {
