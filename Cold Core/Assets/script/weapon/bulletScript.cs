@@ -43,12 +43,12 @@ public class bulletScript : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            animator.SetBool("boom", true);
+            animator.SetBool("Boom", true);
             Destroy(gameObject);
         }
         if (collision.gameObject.layer == 6)
         {
-            animator.SetBool("boom", false);
+            animator.SetBool("Boom", true);
             Destroy(gameObject);
         }
     }
