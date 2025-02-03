@@ -12,7 +12,6 @@ public class bulletScript : MonoBehaviour
     private float timer;
 
     public GameObject explosion;
-    public Animator animator;
     [SerializeField] private float destroyBullet;
     // Start is called before the first frame update
     void Start()
