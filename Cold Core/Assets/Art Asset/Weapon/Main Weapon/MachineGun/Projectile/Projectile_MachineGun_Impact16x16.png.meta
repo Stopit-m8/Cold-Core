@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -178,10 +178,10 @@ TextureImporter:
       name: Projectile_MachineGun_Impact16x16_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 17
-        width: 11
-        height: 11
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,7 +189,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7e3e29c18e47eb4b990afa3c910fba4
+      spriteID: 2f957e40d20b99443a3e000dfdd96fb8
       internalID: -1596312187
       vertices: []
       indices: 
@@ -199,10 +199,10 @@ TextureImporter:
       name: Projectile_MachineGun_Impact16x16_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 5
-        width: 34
-        height: 38
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,7 +210,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5910a7254c2037a4988eccb8a33afc2f
+      spriteID: 9dd8c05dd665dee40a26594f84955c49
       internalID: -809251390
       vertices: []
       indices: 
@@ -220,10 +220,10 @@ TextureImporter:
       name: Projectile_MachineGun_Impact16x16_2
       rect:
         serializedVersion: 2
-        x: 98
-        y: 2
-        width: 42
-        height: 44
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,7 +231,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c55ad29af164c564aba3601136739641
+      spriteID: 67ae9d333feb74e4bb82080a8550a028
       internalID: 1352901290
       vertices: []
       indices: 
