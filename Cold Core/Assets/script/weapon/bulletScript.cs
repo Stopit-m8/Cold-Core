@@ -11,6 +11,7 @@ public class bulletScript : MonoBehaviour
     public float force;
     private float timer;
 
+    public GameObject explosion;
     public Animator animator;
     [SerializeField] private float destroyBullet;
     // Start is called before the first frame update
@@ -30,9 +31,11 @@ public class bulletScript : MonoBehaviour
     void Update()
     {
         
+        
         timer += Time.deltaTime;
         if (timer > destroyBullet)
         {
+        
             Destroy(gameObject);
             timer = 0;
     
@@ -41,14 +44,17 @@ public class bulletScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
+        
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            animator.SetBool("Boom", true);
+           Instantiate(explosion, );
+            
             Destroy(gameObject);
         }
         if (collision.gameObject.layer == 6)
         {
             animator.SetBool("Boom", true);
+            
             Destroy(gameObject);
         }
     }
