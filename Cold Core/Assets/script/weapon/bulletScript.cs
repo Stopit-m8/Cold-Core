@@ -47,14 +47,14 @@ public class bulletScript : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Enemy"))
         {
-           Instantiate(explosion, );
+           Instantiate(explosion, transform.position, Quaternion.identity);
             
             Destroy(gameObject);
         }
         if (collision.gameObject.layer == 6)
         {
-            animator.SetBool("Boom", true);
-            
+            Instantiate(explosion, transform.position, Quaternion.identity);
+
             Destroy(gameObject);
         }
     }
