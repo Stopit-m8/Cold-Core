@@ -180,8 +180,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +195,73 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: projectile_telluscanonbullet_flying20x20_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84b4826eaf5482419b836d6b43c4e5f
+      internalID: -1905689401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_telluscanonbullet_flying20x20_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbc6d1a47a894c4799416e2ee42c6a8
+      internalID: 1082373715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_telluscanonbullet_flying20x20_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba96e0588618bbd449ba493b337a16fa
+      internalID: -1467246352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 292e4ef116f4e4346be7a67ce8f256a1
     internalID: 0
     vertices: []
     indices: 
@@ -207,6 +270,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       projectile_telluscanonbullet_flying20x20_0: 3445806816333176535
+      projectile_telluscanonbullet_flying20x20_1: -1905689401
+      projectile_telluscanonbullet_flying20x20_2: 1082373715
+      projectile_telluscanonbullet_flying20x20_3: -1467246352
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
