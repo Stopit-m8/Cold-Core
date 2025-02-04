@@ -28,8 +28,8 @@ public class Enemy_Health : MonoBehaviour
     {
         if (eCurrentHealth <= 0)
         {
-            eCurrentHealth = 0;
             animator.SetBool("tankdead", true);
+            eCurrentHealth = 0;
             Instantiate(item,transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
