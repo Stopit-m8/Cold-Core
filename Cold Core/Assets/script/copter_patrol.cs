@@ -24,14 +24,6 @@ public class copter_patrol : MonoBehaviour
     void Update()
     {
 
-
-        if (HasLOS == true)
-        {
-            rb.velocity = new Vector2(0f, 0f);
-        }
-        else
-        {
-
             Vector2 point = currentPoint.position - transform.position;
             if (currentPoint == PointB.transform)
             {
@@ -61,7 +53,7 @@ public class copter_patrol : MonoBehaviour
             //{
             //    animator.SetBool("Speed", false);
             //}
-        }
+        
 
     }
 
