@@ -626,11 +626,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6832964107392178249, guid: 0a9796893987057448b51a71f8b24663, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.29
+      value: 5.28
       objectReference: {fileID: 0}
     - target: {fileID: 6832964107392178249, guid: 0a9796893987057448b51a71f8b24663, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.13
+      value: -4.89
       objectReference: {fileID: 0}
     - target: {fileID: 6832964107392178249, guid: 0a9796893987057448b51a71f8b24663, type: 3}
       propertyPath: m_LocalPosition.z
@@ -884,7 +884,7 @@ Transform:
   m_GameObject: {fileID: 599075587}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.570006, y: 2.7896047, z: 4.3686132}
+  m_LocalPosition: {x: 12.533, y: 1.417, z: 4.3686132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4885,6 +4885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1435466575}
   - component: {fileID: 1435466576}
+  - component: {fileID: 1435466577}
   m_Layer: 8
   m_Name: LOS
   m_TagString: Enemy_LOS
@@ -4900,8 +4901,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435466574}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.2, y: -0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4936,10 +4937,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.504138, y: 0.0817678}
+  m_Offset: {x: -3.131981, y: 0.0817678}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4950,8 +4951,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6999912, y: 0.8364644}
+  m_Size: {x: 5.955677, y: 0.8364644}
   m_EdgeRadius: 0
+--- !u!114 &1435466577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435466574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3557cc93121894299e09e4c88d3b00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Turret: {fileID: 1885531388}
+  animator: {fileID: 0}
 --- !u!1 &1443446478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5076,8 +5091,8 @@ GameObject:
   - component: {fileID: 1489284745}
   - component: {fileID: 1489284749}
   - component: {fileID: 1489284748}
-  - component: {fileID: 1489284747}
   - component: {fileID: 1489284746}
+  - component: {fileID: 1489284750}
   m_Layer: 8
   m_Name: Tur
   m_TagString: Enemy
@@ -5094,7 +5109,7 @@ Transform:
   m_GameObject: {fileID: 1489284744}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -19.71, y: -7.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5145,7 +5160,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -512099852, guid: c7e6d0b037af3c8498d01a0414c1125a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.75, y: 0.69}
@@ -5154,18 +5169,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1489284747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489284744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 549c0a31e8421a746b4bb7d54ee5a3d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1489284748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5195,7 +5198,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.014429569, y: 0}
@@ -5237,7 +5240,23 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 7
+--- !u!114 &1489284750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489284744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9fb2e3253d1e8e4fa289c069ae6f348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eMaxHealth: 300
+  eCurrentHealth: 0
+  item: {fileID: 6490715458084336178, guid: 46a73e92f9e86ae4282e249bfbba867d, type: 3}
+  animator: {fileID: 0}
 --- !u!1 &1578485454
 GameObject:
   m_ObjectHideFlags: 0
@@ -5666,6 +5685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1885531387}
+  - component: {fileID: 1885531388}
   m_Layer: 8
   m_Name: BulletPoint
   m_TagString: Untagged
@@ -5682,12 +5702,28 @@ Transform:
   m_GameObject: {fileID: 1885531386}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.31, y: 0.17, z: 0}
+  m_LocalPosition: {x: 0.34, y: 0.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1489284745}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1885531388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885531386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa6e01f8c768894c910557e2e3c0ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasLOS: 0
+  transform: {fileID: 1885531387}
+  Bullet: {fileID: 227711236701120785, guid: 832613ec2073fbf4cb0f041eef849a3a, type: 3}
+  FireRate: 1
 --- !u!1 &1900007586
 GameObject:
   m_ObjectHideFlags: 0
