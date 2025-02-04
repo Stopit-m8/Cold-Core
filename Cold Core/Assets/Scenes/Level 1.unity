@@ -2432,6 +2432,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 396723398484872012, guid: 3d0b6ea755d51f941848bdc1358b5a3f, type: 3}
+      propertyPath: deathAnimationClip
+      value: 
+      objectReference: {fileID: 7400000, guid: a0d613c540ea833469b9754c4a887f87, type: 2}
     - target: {fileID: 2850066605995169713, guid: 3d0b6ea755d51f941848bdc1358b5a3f, type: 3}
       propertyPath: m_Name
       value: TellusTank
