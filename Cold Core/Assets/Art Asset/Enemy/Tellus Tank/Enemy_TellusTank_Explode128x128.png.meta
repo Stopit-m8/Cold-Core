@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 100128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -173,7 +173,490 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dc9bed8baffcd43b2598c17e60bc86
+      internalID: -624234869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_1
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7b1514e9a3c6b4c964ec563126dc65
+      internalID: 241716399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_2
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e074cd962c1ab924da79291dada90547
+      internalID: -1853368593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_3
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5957a3fd723448b4881e3d108fb26158
+      internalID: -168910522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_4
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7ebe38d86c70c4ba013a720186c1c2
+      internalID: 1330162594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_5
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8c7bbfb59584f47bfcfeecec21b9fa
+      internalID: 322036773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_6
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9b1551962b54b4e834bf0f0cf9486b
+      internalID: 6041515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_7
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd8a637e12b0414f8f11b12168d8d7e
+      internalID: 743528484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_8
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58625a3a72b130d49bb2010fcde04ce6
+      internalID: 531036919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_9
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4393aecc37761a845a1f189657611b33
+      internalID: -1016095997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_10
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f29056cd722f2b45b733106e342e237
+      internalID: -1843133996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_11
+      rect:
+        serializedVersion: 2
+        x: 4092
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ea9b685d5b43049a80f9d3376dc007
+      internalID: 645145958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_12
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019f106f9ee59de4890aaa3bd3838b96
+      internalID: 1254572900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_13
+      rect:
+        serializedVersion: 2
+        x: 4836
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33931db60f0946c4c928b2223b5eceab
+      internalID: -1277444280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_14
+      rect:
+        serializedVersion: 2
+        x: 5208
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691a207f7a576984090ebd3700f93329
+      internalID: 2011983089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_15
+      rect:
+        serializedVersion: 2
+        x: 5580
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704a99585060441419a5e7459ac365fe
+      internalID: -176196670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_16
+      rect:
+        serializedVersion: 2
+        x: 5952
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3929d0cedcb6fe54786fe3d7f751298a
+      internalID: -288545010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_17
+      rect:
+        serializedVersion: 2
+        x: 6324
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbaf9885cd700d49bc70cd270832a2d
+      internalID: 29778468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_18
+      rect:
+        serializedVersion: 2
+        x: 6696
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087bd9646e2dcdc44820c9233d7aea82
+      internalID: 2079442289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_19
+      rect:
+        serializedVersion: 2
+        x: 7068
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd4cf98353f9834c8d0814aa0dd60e9
+      internalID: 1595730673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_20
+      rect:
+        serializedVersion: 2
+        x: 7440
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079d81e71a4008e45bd1e59381406e5f
+      internalID: -1246303024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_21
+      rect:
+        serializedVersion: 2
+        x: 7812
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d6bd7f0c2d44c419f1dbb6100f5793
+      internalID: 389602076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_TellusTank_Explode128x128_22
+      rect:
+        serializedVersion: 2
+        x: 8184
+        y: 0
+        width: 372
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe024e7a7df4e6343a118367344c42f0
+      internalID: 388301656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -184,7 +667,30 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Enemy_TellusTank_Explode128x128_0: -624234869
+      Enemy_TellusTank_Explode128x128_1: 241716399
+      Enemy_TellusTank_Explode128x128_10: -1843133996
+      Enemy_TellusTank_Explode128x128_11: 645145958
+      Enemy_TellusTank_Explode128x128_12: 1254572900
+      Enemy_TellusTank_Explode128x128_13: -1277444280
+      Enemy_TellusTank_Explode128x128_14: 2011983089
+      Enemy_TellusTank_Explode128x128_15: -176196670
+      Enemy_TellusTank_Explode128x128_16: -288545010
+      Enemy_TellusTank_Explode128x128_17: 29778468
+      Enemy_TellusTank_Explode128x128_18: 2079442289
+      Enemy_TellusTank_Explode128x128_19: 1595730673
+      Enemy_TellusTank_Explode128x128_2: -1853368593
+      Enemy_TellusTank_Explode128x128_20: -1246303024
+      Enemy_TellusTank_Explode128x128_21: 389602076
+      Enemy_TellusTank_Explode128x128_22: 388301656
+      Enemy_TellusTank_Explode128x128_3: -168910522
+      Enemy_TellusTank_Explode128x128_4: 1330162594
+      Enemy_TellusTank_Explode128x128_5: 322036773
+      Enemy_TellusTank_Explode128x128_6: 6041515
+      Enemy_TellusTank_Explode128x128_7: 743528484
+      Enemy_TellusTank_Explode128x128_8: 531036919
+      Enemy_TellusTank_Explode128x128_9: -1016095997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
