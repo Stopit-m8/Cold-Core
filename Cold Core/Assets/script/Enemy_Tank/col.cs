@@ -17,6 +17,14 @@ public class col : MonoBehaviour
             Tank.HasLOS = true;
         }
     }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        tag = collision.gameObject.CompareTag("Player");
+        if (tag)
+        {
+            Tank.HasLOS = true;
+        }
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         tag = collision.gameObject.CompareTag("Player");
