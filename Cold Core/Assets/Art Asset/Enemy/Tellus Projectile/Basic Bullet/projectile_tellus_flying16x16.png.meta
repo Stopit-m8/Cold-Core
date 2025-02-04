@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -173,7 +173,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: projectile_tellus_flying16x16_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 15
+        width: 42
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d03fb62012d1ca4483192703369a6cf
+      internalID: 1370938995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_tellus_flying16x16_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 15
+        width: 45
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0332530391156a54eaafa8df3de279bf
+      internalID: 1087527020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_tellus_flying16x16_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 15
+        width: 45
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d60449fe0f0a347b674ded7faf72e9
+      internalID: -230040062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_tellus_flying16x16_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 15
+        width: 45
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a051d657b0763304abc80488bf86d4df
+      internalID: -1313791752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_tellus_flying16x16_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 15
+        width: 45
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35cdc6c3b3ad9742ac2c8ca5e55b77f
+      internalID: 2145540294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -184,7 +289,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      projectile_tellus_flying16x16_0: 1370938995
+      projectile_tellus_flying16x16_1: 1087527020
+      projectile_tellus_flying16x16_2: -230040062
+      projectile_tellus_flying16x16_3: -1313791752
+      projectile_tellus_flying16x16_4: 2145540294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

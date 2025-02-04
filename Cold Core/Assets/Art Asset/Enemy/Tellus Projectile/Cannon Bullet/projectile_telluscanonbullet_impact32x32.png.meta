@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -173,7 +173,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: projectile_telluscanonbullet_impact32x32_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 36
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd20da5f239f11247945dc28de5b0083
+      internalID: -1912477483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_telluscanonbullet_impact32x32_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 34
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4070654eea867f4f9814d654ed59f5d
+      internalID: 379778421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_telluscanonbullet_impact32x32_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 35
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c173876adeeae4f42b627975ad5e16ea
+      internalID: 1301492713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_telluscanonbullet_impact32x32_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 33
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a809738f4def1fc4999a121484ca4257
+      internalID: -1334379437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_telluscanonbullet_impact32x32_4
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 34
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e0e10f69d40f546aaca5423d558924
+      internalID: -228350885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_telluscanonbullet_impact32x32_5
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 13
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7e98a94094a1947a16fdce62b1d184
+      internalID: 782958672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_telluscanonbullet_impact32x32_6
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 15
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0e9d0741630b4419cc22ce9939141b
+      internalID: -65435091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_telluscanonbullet_impact32x32_7
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 7
+        width: 87
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03894270b6dedae45b0717ae26d1e152
+      internalID: 548941056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -184,7 +352,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      projectile_telluscanonbullet_impact32x32_0: -1912477483
+      projectile_telluscanonbullet_impact32x32_1: 379778421
+      projectile_telluscanonbullet_impact32x32_2: 1301492713
+      projectile_telluscanonbullet_impact32x32_3: -1334379437
+      projectile_telluscanonbullet_impact32x32_4: -228350885
+      projectile_telluscanonbullet_impact32x32_5: 782958672
+      projectile_telluscanonbullet_impact32x32_6: -65435091
+      projectile_telluscanonbullet_impact32x32_7: 548941056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
