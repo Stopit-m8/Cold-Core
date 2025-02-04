@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 7362764098245586695}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.71, y: -7.06, z: 0}
+  m_LocalPosition: {x: 0.11, y: -0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -258,6 +258,7 @@ MonoBehaviour:
   eCurrentHealth: 0
   item: {fileID: 6490715458084336178, guid: 46a73e92f9e86ae4282e249bfbba867d, type: 3}
   animator: {fileID: 0}
+  deathAnimationClip: {fileID: 0}
 --- !u!114 &2411754164439508762
 MonoBehaviour:
   m_ObjectHideFlags: 0
