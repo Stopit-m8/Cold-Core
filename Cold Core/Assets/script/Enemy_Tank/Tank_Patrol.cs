@@ -27,11 +27,9 @@ public class Tank_Patrol : MonoBehaviour
         if (HasLOS == true)
         {
             rb.velocity = new Vector2(0f, 0f);
-            Debug.Log("has LOS");
         }
         else
         {
-            Debug.Log("no LOS");
 
             Vector2 point = currentPoint.position - transform.position;
             if (currentPoint == PointB.transform)

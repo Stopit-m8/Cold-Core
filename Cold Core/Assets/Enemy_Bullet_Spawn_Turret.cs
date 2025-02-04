@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Bullet_Spawn : MonoBehaviour
+public class Enemy_Bullet_Spawn_Turret : MonoBehaviour
 {
-    public Tank_Patrol Tank;
+    public bool HasLOS = false;
     [SerializeField] private Transform transform;
     [SerializeField] private GameObject Bullet;
     [SerializeField] private float FireRate;
@@ -12,21 +12,22 @@ public class Enemy_Bullet_Spawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FireRateTimer = FireRate - 0.5f;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Tank.HasLOS == true)
+        if (HasLOS == true)
         {
+            Debug.Log("Turret Has LOS");
             FireRateTimer += Time.deltaTime;
-            if(FireRateTimer > FireRate)
+            if (FireRateTimer > FireRate)
             {
                 Instantiate(Bullet, transform.position, transform.rotation);
                 FireRateTimer = 0f;
-             }
+            }
         }
-            
+
     }
 }
