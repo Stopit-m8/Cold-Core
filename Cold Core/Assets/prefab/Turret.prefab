@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 638166571387845585}
   - component: {fileID: 1471777012806169086}
   - component: {fileID: 2411754164439508762}
+  - component: {fileID: 5277798734264055998}
   m_Layer: 8
   m_Name: Tur
   m_TagString: Enemy
@@ -257,7 +258,11 @@ MonoBehaviour:
   eMaxHealth: 300
   eCurrentHealth: 0
   item: {fileID: 6490715458084336178, guid: 46a73e92f9e86ae4282e249bfbba867d, type: 3}
+<<<<<<< Updated upstream
   animator: {fileID: 0}
+=======
+  animator: {fileID: 5277798734264055998}
+>>>>>>> Stashed changes
   deathAnimationClip: {fileID: 0}
 --- !u!114 &2411754164439508762
 MonoBehaviour:
@@ -272,3 +277,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acc: 0
+--- !u!95 &5277798734264055998
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7362764098245586695}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1858a91b8abd05a428e6a7e1a0f03415, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

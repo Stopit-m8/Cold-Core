@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5712457610903620854}
   - component: {fileID: 6973407584085337109}
   - component: {fileID: -8136562879047685143}
+  - component: {fileID: 3971498894923739817}
   m_Layer: 8
   m_Name: Turret_Bullet
   m_TagString: Enemy_Bullet
@@ -137,6 +138,7 @@ MonoBehaviour:
   Force: 20
   DTime: 3
   Damage: 5
+  animator: {fileID: 3971498894923739817}
 --- !u!50 &-8136562879047685143
 Rigidbody2D:
   serializedVersion: 4
@@ -164,3 +166,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!95 &3971498894923739817
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227711236701120785}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bfecad157be64ea438ee22d4adb6ae86, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
