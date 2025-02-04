@@ -6,12 +6,15 @@ public class Player_Health : MonoBehaviour
     public int currentHealth;
     public Player_HealthBar healthBar;
     public Animator animator;
-    public DeathMenuController deathMenuController;  // Reference to the Death Menu Controller
+    public DeathMenuController deathMenuController;
+
+    private EXPPlayer_Movement playerMovement;  // Reference to the Player Movement script
 
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.setMaxHealth(maxHealth);
+        playerMovement = GetComponent<EXPPlayer_Movement>();  // Get the Player Movement component
     }
 
     void Update()
@@ -29,16 +32,21 @@ public class Player_Health : MonoBehaviour
             currentHealth = maxHealth;
         }
 
-        // If health reaches 0, trigger death and show the death menu
         if (currentHealth <= 0)
         {
             currentHealth = 0;
             animator.SetBool("PlayerIsDead", true);
 
+            // Set the player's movement to be disabled upon death
+            if (playerMovement != null)
+            {
+                playerMovement.isDead = true;  // Set the isDead flag to true
+            }
+
             // Show the death menu
             if (deathMenuController != null)
             {
-                deathMenuController.ShowDeathMenu();  // Show the death menu
+                deathMenuController.ShowDeathMenu();
             }
         }
     }

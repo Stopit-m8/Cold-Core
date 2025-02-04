@@ -165,6 +165,7 @@ MonoBehaviour:
   Force: 10
   DTime: 3
   Damage: 10
+  animator: {fileID: -5230363935126952360}
 --- !u!95 &-5230363935126952360
 Animator:
   serializedVersion: 5

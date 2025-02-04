@@ -178,10 +178,10 @@ TextureImporter:
       name: Enemy_TellusTank_Walking64x64_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 3
-        width: 180
-        height: 93
+        x: 0
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,10 +199,10 @@ TextureImporter:
       name: Enemy_TellusTank_Walking64x64_1
       rect:
         serializedVersion: 2
-        x: 198
-        y: 3
-        width: 180
-        height: 93
+        x: 192
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +220,10 @@ TextureImporter:
       name: Enemy_TellusTank_Walking64x64_2
       rect:
         serializedVersion: 2
-        x: 390
-        y: 3
-        width: 180
-        height: 93
+        x: 384
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
