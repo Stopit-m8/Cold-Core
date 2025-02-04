@@ -48,6 +48,7 @@ MonoBehaviour:
   transform: {fileID: 7261373193927565711}
   Bullet: {fileID: 2985009427306427934, guid: 4db8fd3c91fca16409ecd297fde6f310, type: 3}
   FireRate: 1
+  FireRateTimer: 0
 --- !u!1 &2351720569574958119
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,6 +436,7 @@ MonoBehaviour:
   PointB: {fileID: 3993529580440324264}
   HasLOS: 0
   animator: {fileID: 756678680718844399}
+  acc: {fileID: 0}
   LOS: {fileID: 6231311063708792543}
   speed: 2
 --- !u!114 &396723398484872012

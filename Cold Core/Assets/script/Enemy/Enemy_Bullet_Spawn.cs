@@ -8,7 +8,7 @@ public class Enemy_Bullet_Spawn : MonoBehaviour
     [SerializeField] private Transform transform;
     [SerializeField] private GameObject Bullet;
     [SerializeField] private float FireRate;
-    private float FireRateTimer;
+    [SerializeField] private float FireRateTimer;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +26,10 @@ public class Enemy_Bullet_Spawn : MonoBehaviour
                 Instantiate(Bullet, transform.position, transform.rotation);
                 FireRateTimer = 0f;
              }
+        }
+        else
+        {
+            FireRateTimer = FireRate - 0.5f;
         }
             
     }

@@ -9,6 +9,7 @@ public class Enemy_Bullet_Spawn_Turret : MonoBehaviour
     [SerializeField] private GameObject Bullet;
     [SerializeField] private float FireRate;
     private float FireRateTimer;
+    public enemyActive acc;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class Enemy_Bullet_Spawn_Turret : MonoBehaviour
     void Update()
     {
             FireRateTimer += Time.deltaTime;
-            if (FireRateTimer > FireRate)
+            if (FireRateTimer > FireRate && acc.acc)
             {
                 Instantiate(Bullet, transform.position, transform.rotation);
                 FireRateTimer = 0f;
