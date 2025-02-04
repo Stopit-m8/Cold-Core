@@ -58,6 +58,17 @@ public class EXPPlayer_Movement : MonoBehaviour
 
             UpdateAnimator();  // Update the animator parameters based on player state
         }
+        else
+        {
+            // Force death animation immediately when the player is dead (even mid-air)
+            ForceDeathAnimation();
+
+            // Increase gravity scale so the player falls fast
+            body.gravityScale = 5;
+
+            // Stop horizontal movement (but don't stop the animator)
+            body.velocity = new Vector2(0, body.velocity.y); // Keep the Y velocity for falling
+        }
     }
 
     void FixedUpdate()
@@ -66,6 +77,11 @@ public class EXPPlayer_Movement : MonoBehaviour
         {
             CheckGround();
             ApplyFriction();
+        }
+        else
+        {
+            // Ensure ground detection works even if the player is not moving horizontally
+            CheckGround();
         }
     }
 
@@ -77,7 +93,6 @@ public class EXPPlayer_Movement : MonoBehaviour
 
     void MoveWithInput()
     {
-        // Movement logic for horizontal movement
         if (Mathf.Abs(xInput) > 0)
         {
             body.velocity = new Vector2(xInput * groundSpeed, body.velocity.y);
@@ -100,7 +115,15 @@ public class EXPPlayer_Movement : MonoBehaviour
 
     void CheckGround()
     {
+        // Ground detection is critical, let's force a debug check here
+        bool wasGrounded = isGrounded;
         isGrounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundMask).Length > 0;
+
+        // Debugging: Check if ground state changes are properly detected
+        if (wasGrounded != isGrounded)
+        {
+            Debug.Log(isGrounded ? "Player is grounded" : "Player is in the air");
+        }
     }
 
     void Flip()
@@ -145,7 +168,13 @@ public class EXPPlayer_Movement : MonoBehaviour
     {
         animator.SetFloat("XSpeed", Mathf.Abs(xInput));
         animator.SetBool("XJumping", !isGrounded);
-        animator.SetBool("XIsFalling", body.velocity.y < 0);
+
+        // Debugging: Log falling status for mid-air state
+        Debug.Log("isFalling: " + (body.velocity.y < 0 && !isGrounded));
+
+        // Check if player is falling even if not moving horizontally
+        // If player is falling and not grounded, set the falling animation to true
+        animator.SetBool("XIsFalling", body.velocity.y < 0 && !isGrounded);
 
         if (Mathf.Abs(xInput) == 0 && isGrounded)
         {
@@ -155,5 +184,35 @@ public class EXPPlayer_Movement : MonoBehaviour
         {
             animator.SetBool("XIsIdle", false);
         }
+    }
+
+    // Force the death animation to play immediately, even mid-air
+    void ForceDeathAnimation()
+    {
+        // Forcefully stop any animation and play the death animation immediately
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Death"))
+        {
+            // This will ensure that the "Death" animation plays from the beginning
+            animator.Play("Death", 0, 0);  // Play "Death" animation from the start
+        }
+    }
+
+    // Call this method when the player dies
+    public void OnPlayerDeath()
+    {
+        isDead = true;
+
+        // Immediately stop all movement once the player is dead
+        body.velocity = new Vector2(0, body.velocity.y); // Keep the Y velocity for falling
+
+        // Force the death animation to play immediately
+        ForceDeathAnimation();
+
+        // Make sure gravity affects the player immediately (fall faster)
+        body.gravityScale = 5;
+
+        // Disable player input (optional: helps in ensuring no movement during death)
+        xInput = 0;
+        yInput = 0;
     }
 }

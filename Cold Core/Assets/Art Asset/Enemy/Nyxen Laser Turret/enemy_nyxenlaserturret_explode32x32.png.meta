@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c7e6d0b037af3c8498d01a0414c1125a
+guid: c4257e9fa0e4b634c8fced229ba3b037
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -175,7 +175,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_NyxenStationaryLaserGunTurret_shooting32x32_0
+      name: enemy_nyxenlaserturret_explode32x32_0
       rect:
         serializedVersion: 2
         x: 0
@@ -189,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb8b0593143c56b47bb19b5923e39ddb
-      internalID: -512099852
+      spriteID: d054c51574b22aa4db2229a925bf157d
+      internalID: 1389328381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_NyxenStationaryLaserGunTurret_shooting32x32_1
+      name: enemy_nyxenlaserturret_explode32x32_1
       rect:
         serializedVersion: 2
         x: 96
@@ -210,8 +210,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8495cd0b906c9504aafbd8ca34dd015c
-      internalID: -834385000
+      spriteID: 17ddd6adcd626a747bfbf3bb272b4fb8
+      internalID: 1506780896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nyxenlaserturret_explode32x32_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07cb51a47e1f554e9138cb68c0811b9
+      internalID: 809315240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nyxenlaserturret_explode32x32_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8838ce3ed68fc774cb45cce41a81ac8d
+      internalID: 1623970808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nyxenlaserturret_explode32x32_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e8a236e83dd0e4bad982d4cb1b240e
+      internalID: 45311413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nyxenlaserturret_explode32x32_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c054b3dc0cdb4242a8fea984021bee8
+      internalID: 1921147386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nyxenlaserturret_explode32x32_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c9b21576c41d147acdc3e8cec41e2d
+      internalID: -1754268032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nyxenlaserturret_explode32x32_7
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d3b9d525ea5a941bf8333e703922e5
+      internalID: 2016941452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nyxenlaserturret_explode32x32_8
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a77e6ef7bb9d80458338b4f7ccaa91c
+      internalID: 1497281268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nyxenlaserturret_explode32x32_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9171ab51446994e429bc425b04cbfc33
+      internalID: -869580077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nyxenlaserturret_explode32x32_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24365d8245492b3498d70a9f6751e0e7
+      internalID: -2044335675
       vertices: []
       indices: 
       edges: []
@@ -227,8 +416,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Enemy_NyxenStationaryLaserGunTurret_shooting32x32_0: -512099852
-      Enemy_NyxenStationaryLaserGunTurret_shooting32x32_1: -834385000
+      enemy_nyxenlaserturret_explode32x32_0: 1389328381
+      enemy_nyxenlaserturret_explode32x32_1: 1506780896
+      enemy_nyxenlaserturret_explode32x32_10: -2044335675
+      enemy_nyxenlaserturret_explode32x32_2: 809315240
+      enemy_nyxenlaserturret_explode32x32_3: 1623970808
+      enemy_nyxenlaserturret_explode32x32_4: 45311413
+      enemy_nyxenlaserturret_explode32x32_5: 1921147386
+      enemy_nyxenlaserturret_explode32x32_6: -1754268032
+      enemy_nyxenlaserturret_explode32x32_7: 2016941452
+      enemy_nyxenlaserturret_explode32x32_8: 1497281268
+      enemy_nyxenlaserturret_explode32x32_9: -869580077
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
