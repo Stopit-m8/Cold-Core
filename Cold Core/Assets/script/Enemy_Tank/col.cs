@@ -7,7 +7,7 @@ public class col : MonoBehaviour
     private bool tag;
     public Tank_Patrol Tank;
 
-    public Animator animator; 
+
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -452,3 +452,4 @@ MonoBehaviour:
   eMaxHealth: 150
   eCurrentHealth: 0
   item: {fileID: 6490715458084336178, guid: 46a73e92f9e86ae4282e249bfbba867d, type: 3}
+  animator: {fileID: 756678680718844399}

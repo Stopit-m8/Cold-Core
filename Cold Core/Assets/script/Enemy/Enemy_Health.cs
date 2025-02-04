@@ -7,6 +7,8 @@ public class Enemy_Health : MonoBehaviour
     public int eMaxHealth = 150;
     public int eCurrentHealth;
     [SerializeField] private GameObject item;
+
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,7 @@ public class Enemy_Health : MonoBehaviour
         if (eCurrentHealth <= 0)
         {
             eCurrentHealth = 0;
+            animator.SetBool("tankdead", true);
             Instantiate(item,transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
