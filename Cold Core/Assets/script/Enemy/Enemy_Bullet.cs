@@ -18,7 +18,11 @@ public class Enemy_Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
+        if (collision.gameObject.layer == 6)
+        {
+            Destroy(gameObject);
+        }
+
     }
     // Start is called before the first frame update
     void Start()

@@ -11,6 +11,7 @@ TagManager:
   - Insta_Kill
   - Ground
   - ItemHealth
+  - EnemyActive
   layers:
   - Default
   - TransparentFX
