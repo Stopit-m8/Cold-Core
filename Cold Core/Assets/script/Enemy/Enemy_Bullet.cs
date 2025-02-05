@@ -19,8 +19,8 @@ public class Enemy_Bullet : MonoBehaviour
         // Only trigger explosion once
         if (!hasExploded)
         {
-            // Check if the bullet hits the player or something with the "Ground" tag
-            if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Ground"))
+            // Check if the bullet hits the player or something with the "Ground" layer
+            if (collision.gameObject.CompareTag("Player") || collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
             {
                 Explode();  // Trigger explosion animation and stop the bullet
                 hasExploded = true;  // Prevent multiple explosions
