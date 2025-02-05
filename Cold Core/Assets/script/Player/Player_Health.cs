@@ -55,7 +55,7 @@ public class Player_Health : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy_Bullet"))
         {
-            TakeDamage(20);
+            TakeDamage(10);
         }
         if (collision.gameObject.CompareTag("Insta_Kill"))
         {
