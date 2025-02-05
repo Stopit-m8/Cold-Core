@@ -6570,7 +6570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8145279478431849635, guid: f732d83714c371f4b8ae58651c8c26ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.61
+      value: -15.46
       objectReference: {fileID: 0}
     - target: {fileID: 8145279478431849635, guid: f732d83714c371f4b8ae58651c8c26ec, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6664,6 +6664,14 @@ PrefabInstance:
     - target: {fileID: 3256256100611466336, guid: a21172e1dbec97242900a482f8a1d49e, type: 3}
       propertyPath: m_Name
       value: Drone_enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256256100611466336, guid: a21172e1dbec97242900a482f8a1d49e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459386261387844467, guid: a21172e1dbec97242900a482f8a1d49e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 3885514711487156964}
   - component: {fileID: 664184721881549207}
   - component: {fileID: 1818490271208282805}
+  - component: {fileID: 8607051592503977595}
   m_Layer: 8
   m_Name: Drone
   m_TagString: Enemy
@@ -96,7 +97,7 @@ Transform:
   m_LocalScale: {x: 0.32118, y: 0.32118, z: 0.32118}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4131891618715484708}
+  - {fileID: 1464451321534471989}
   m_Father: {fileID: 307972902023846041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &8530419627726024348
@@ -246,6 +247,21 @@ MonoBehaviour:
   item: {fileID: 6490715458084336178, guid: 46a73e92f9e86ae4282e249bfbba867d, type: 3}
   animator: {fileID: 0}
   deathAnimationClip: {fileID: 0}
+--- !u!114 &8607051592503977595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2942933941418901901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2e5286323d91d4b9910f06537f5cae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 6509960120962072146, guid: da49bf0f043317d459e490dd5936bbf8, type: 3}
+  bulletPos: {fileID: 1464451321534471989}
+  timerMax: 2
 --- !u!1 &3052944068330222399
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,7 +364,7 @@ Transform:
   - {fileID: 7522735340799618253}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7394819168766025967
+--- !u!1 &8459386261387844467
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -356,24 +372,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4131891618715484708}
+  - component: {fileID: 1464451321534471989}
   m_Layer: 8
-  m_Name: BulletPoint
+  m_Name: bulletPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4131891618715484708
+--- !u!4 &1464451321534471989
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7394819168766025967}
+  m_GameObject: {fileID: 8459386261387844467}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
