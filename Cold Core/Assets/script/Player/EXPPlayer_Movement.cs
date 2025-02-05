@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EXPPlayer_Movement : MonoBehaviour
@@ -19,6 +17,31 @@ public class EXPPlayer_Movement : MonoBehaviour
     [SerializeField] private CapsuleCollider2D groundCheck;
     [SerializeField] private bool isGrounded;
     [SerializeField] private LayerMask groundMask;
+
+    [SerializeField] private AudioManager audioManager;
+
+    private AudioSource walkAudioSource; // AudioSource for walking sound
+    private float stepInterval = 0.4f; // Time between footsteps
+    private float stepTimer = 0f; // Timer to track intervals
+
+    private void Awake()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+
+        if (audioManager == null)
+        {
+            Debug.LogError("AudioManager is NOT found in the scene!");
+        }
+        else
+        {
+            Debug.Log("AudioManager successfully found using FindObjectOfType!");
+        }
+
+        // Initialize the AudioSource for walking sound
+        walkAudioSource = gameObject.AddComponent<AudioSource>();
+        walkAudioSource.loop = false; // Don't loop, we want to play footsteps in intervals
+        walkAudioSource.playOnAwake = false; // Prevent it from playing on awake
+    }
 
     // Direction flag to track if the player is facing right
     public bool isFacingRight = true;
@@ -60,13 +83,8 @@ public class EXPPlayer_Movement : MonoBehaviour
         }
         else
         {
-            // Force death animation immediately when the player is dead (even mid-air)
             ForceDeathAnimation();
-
-            // Increase gravity scale so the player falls fast
             body.gravityScale = 5;
-
-            // Stop horizontal movement (but don't stop the animator)
             body.velocity = new Vector2(0, body.velocity.y); // Keep the Y velocity for falling
         }
     }
@@ -80,7 +98,6 @@ public class EXPPlayer_Movement : MonoBehaviour
         }
         else
         {
-            // Ensure ground detection works even if the player is not moving horizontally
             CheckGround();
         }
     }
@@ -97,10 +114,30 @@ public class EXPPlayer_Movement : MonoBehaviour
         {
             body.velocity = new Vector2(xInput * groundSpeed, body.velocity.y);
 
+            // Footstep sound on every step (check if enough time has passed)
+            stepTimer += Time.deltaTime;
+
+            if (stepTimer >= stepInterval && isGrounded)
+            {
+                // Play footstep sound when enough time has passed
+                walkAudioSource.clip = audioManager.walking;  // Assign the footstep clip
+                walkAudioSource.Play();  // Play the sound
+
+                stepTimer = 0f; // Reset the timer after playing the sound
+            }
+
             // Flip logic
             if ((xInput > 0 && !isFacingRight) || (xInput < 0 && isFacingRight))
             {
                 Flip();
+            }
+        }
+        else
+        {
+            // Stop the walking sound when the player stops moving
+            if (walkAudioSource.isPlaying || !isGrounded)
+            {
+                walkAudioSource.Stop();
             }
         }
     }
@@ -115,11 +152,9 @@ public class EXPPlayer_Movement : MonoBehaviour
 
     void CheckGround()
     {
-        // Ground detection is critical, let's force a debug check here
         bool wasGrounded = isGrounded;
         isGrounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundMask).Length > 0;
 
-        // Debugging: Check if ground state changes are properly detected
         if (wasGrounded != isGrounded)
         {
             Debug.Log(isGrounded ? "Player is grounded" : "Player is in the air");
@@ -138,6 +173,8 @@ public class EXPPlayer_Movement : MonoBehaviour
     {
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
+            walkAudioSource.Stop();
+            audioManager.PlaySFX(audioManager.jumping);
             isJumping = true;
             jumpHoldTimer = 0f;
             body.velocity = new Vector2(body.velocity.x, jumpSpeed);
@@ -147,6 +184,7 @@ public class EXPPlayer_Movement : MonoBehaviour
         {
             if (jumpHoldTimer < jumpHoldTime)
             {
+                walkAudioSource.Stop();
                 jumpHoldTimer += Time.deltaTime;
                 body.velocity = new Vector2(body.velocity.x, jumpSpeed);
             }
@@ -169,11 +207,6 @@ public class EXPPlayer_Movement : MonoBehaviour
         animator.SetFloat("XSpeed", Mathf.Abs(xInput));
         animator.SetBool("XJumping", !isGrounded);
 
-        // Debugging: Log falling status for mid-air state
-        Debug.Log("isFalling: " + (body.velocity.y < 0 && !isGrounded));
-
-        // Check if player is falling even if not moving horizontally
-        // If player is falling and not grounded, set the falling animation to true
         animator.SetBool("XIsFalling", body.velocity.y < 0 && !isGrounded);
 
         if (Mathf.Abs(xInput) == 0 && isGrounded)
@@ -186,32 +219,22 @@ public class EXPPlayer_Movement : MonoBehaviour
         }
     }
 
-    // Force the death animation to play immediately, even mid-air
     void ForceDeathAnimation()
     {
-        // Forcefully stop any animation and play the death animation immediately
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Death"))
         {
-            // This will ensure that the "Death" animation plays from the beginning
-            animator.Play("Death", 0, 0);  // Play "Death" animation from the start
+            animator.Play("Death", 0, 0);
         }
     }
 
-    // Call this method when the player dies
     public void OnPlayerDeath()
     {
         isDead = true;
 
-        // Immediately stop all movement once the player is dead
         body.velocity = new Vector2(0, body.velocity.y); // Keep the Y velocity for falling
-
-        // Force the death animation to play immediately
         ForceDeathAnimation();
-
-        // Make sure gravity affects the player immediately (fall faster)
         body.gravityScale = 5;
 
-        // Disable player input (optional: helps in ensuring no movement during death)
         xInput = 0;
         yInput = 0;
     }

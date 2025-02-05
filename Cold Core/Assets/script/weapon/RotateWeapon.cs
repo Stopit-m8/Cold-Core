@@ -20,6 +20,23 @@ public class RotateWeapon : MonoBehaviour
 
     private Vector3 originalScale;
 
+   [SerializeField] private AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+
+        if (audioManager == null)
+        {
+            Debug.LogError("AudioManager is NOT found in the scene!");
+        }
+        else
+        {
+            Debug.Log("AudioManager successfully found using FindObjectOfType!");
+        }
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +66,7 @@ public class RotateWeapon : MonoBehaviour
             timer += Time.deltaTime;
             if (timer > timeBeweenFire)
             {
+                audioManager.PlaySFX(audioManager.shooting);
                  animator.SetBool("canFire",false);
                 canFire = true;
                 timer = 0;

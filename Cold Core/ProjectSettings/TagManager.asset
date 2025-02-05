@@ -13,6 +13,7 @@ TagManager:
   - ItemHealth
   - EnemyActive
   - TankBody
+  - Audio
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - Enemy
   - Background
   - Finish
-  - 
+  - Audio
   - 
   - 
   - 

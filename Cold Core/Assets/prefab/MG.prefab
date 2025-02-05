@@ -103,7 +103,7 @@ MonoBehaviour:
   canFire: 0
   timeBeweenFire: 1.5
   animator: {fileID: 8615200037465059132}
-  playerMovementScript: {fileID: 0}
+  playerMovementScript: {fileID: 3791508533581542520, guid: 8380c6fcd1baa10488c3a60b1d977e6b, type: 3}
 --- !u!95 &8615200037465059132
 Animator:
   serializedVersion: 5
