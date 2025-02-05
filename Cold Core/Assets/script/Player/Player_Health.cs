@@ -41,8 +41,7 @@ public class Player_Health : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.X))
         {
-            currentHealth -= 20;
-            DisplayDamage(currentHealth);
+            TakeDamage(20);
         }
         if (currentHealth > maxHealth)
         {
@@ -52,7 +51,7 @@ public class Player_Health : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            audioManager.PlaySFX(audioManager.getHit);
+            audioManager.PlaySFX(audioManager.death);
             animator.SetBool("PlayerIsDead", true);
 
             // Set the player's movement to be disabled upon death
@@ -73,13 +72,6 @@ public class Player_Health : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy_Bullet"))
         {
-<<<<<<< Updated upstream
-            DisplayDamage(currentHealth);
-        }
-        if (collision.gameObject.CompareTag("Insta_Kill"))
-        {
-            DisplayDamage(currentHealth);
-=======
             audioManager.PlaySFX(audioManager.getHit);
             TakeDamage(10);
         }
@@ -87,7 +79,6 @@ public class Player_Health : MonoBehaviour
         {
             audioManager.PlaySFX(audioManager.getHit);
             TakeDamage(currentHealth);
->>>>>>> Stashed changes
         }
         if (collision.gameObject.CompareTag("ItemHealth"))
         {
@@ -96,8 +87,9 @@ public class Player_Health : MonoBehaviour
         }
     }
 
-    void DisplayDamage(int damage)
+    void TakeDamage(int damage)
     {
+        currentHealth -= damage;
         healthBar.setHealth(currentHealth);
     }
 
