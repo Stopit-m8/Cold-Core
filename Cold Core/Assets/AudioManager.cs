@@ -18,6 +18,11 @@ public class AudioManager : MonoBehaviour
     public AudioClip bulletImpact;
     public AudioClip getHit;
     public AudioClip heal;
+    public AudioClip tankExplode;
+    public AudioClip cannonBulletimp;
+    public AudioClip Tankshoot;
+
+    public AudioClip Victory;
 
     private void Start()
     {

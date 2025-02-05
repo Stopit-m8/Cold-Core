@@ -9,6 +9,23 @@ public class Enemy_Bullet_Spawn : MonoBehaviour
     [SerializeField] private GameObject Bullet;
     [SerializeField] private float FireRate;
     [SerializeField] private float FireRateTimer;
+
+    [SerializeField] private AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+
+        if (audioManager == null)
+        {
+            Debug.LogError("AudioManager is NOT found in the scene!");
+        }
+        else
+        {
+            Debug.Log("AudioManager successfully found using FindObjectOfType!");
+        }
+
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +40,7 @@ public class Enemy_Bullet_Spawn : MonoBehaviour
             FireRateTimer += Time.deltaTime;
             if(FireRateTimer > FireRate)
             {
+                audioManager.PlaySFX(audioManager.Tankshoot);
                 Instantiate(Bullet, transform.position, transform.rotation);
                 FireRateTimer = 0f;
              }

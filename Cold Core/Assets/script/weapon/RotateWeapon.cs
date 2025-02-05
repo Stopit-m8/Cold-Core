@@ -66,7 +66,7 @@ public class RotateWeapon : MonoBehaviour
             timer += Time.deltaTime;
             if (timer > timeBeweenFire)
             {
-                audioManager.PlaySFX(audioManager.shooting);
+              
                  animator.SetBool("canFire",false);
                 canFire = true;
                 timer = 0;

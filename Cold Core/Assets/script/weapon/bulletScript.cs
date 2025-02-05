@@ -26,6 +26,23 @@ public class bulletScript : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, rot);
     }
 
+    [SerializeField] private AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+
+        if (audioManager == null)
+        {
+            Debug.LogError("AudioManager is NOT found in the scene!");
+        }
+        else
+        {
+            Debug.Log("AudioManager successfully found using FindObjectOfType!");
+        }
+
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -34,7 +51,7 @@ public class bulletScript : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > destroyBullet)
         {
-        
+            audioManager.PlaySFX(audioManager.bulletImpact);
             Destroy(gameObject);
             timer = 0;
     
@@ -47,13 +64,13 @@ public class bulletScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
            Instantiate(explosion, transform.position, Quaternion.identity);
-            
+            audioManager.PlaySFX(audioManager.bulletImpact);
             Destroy(gameObject);
         }
         if (collision.gameObject.layer == 6)
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
-
+            audioManager.PlaySFX(audioManager.bulletImpact);
             Destroy(gameObject);
         }
     }

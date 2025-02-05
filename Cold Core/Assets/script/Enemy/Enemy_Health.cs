@@ -15,6 +15,23 @@ public class Enemy_Health : MonoBehaviour
     // Reference to the death animation clip
     public AnimationClip deathAnimationClip;
 
+   [SerializeField] private AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+
+        if (audioManager == null)
+        {
+            Debug.LogError("AudioManager is NOT found in the scene!");
+        }
+        else
+        {
+            Debug.Log("AudioManager successfully found using FindObjectOfType!");
+        }
+
+    }
+
     void Start()
     {
         eCurrentHealth = eMaxHealth;
@@ -36,6 +53,7 @@ public class Enemy_Health : MonoBehaviour
         {
             if (!animator.GetBool("tankdead"))
             {
+                audioManager.PlaySFX(audioManager.tankExplode);
                 animator.SetBool("tankdead", true);  // Trigger death animation
                 eCurrentHealth = 0;
                 Instantiate(item, transform.position, Quaternion.identity);

@@ -16,6 +16,23 @@ public class Enemy_Bullet : MonoBehaviour
 
     private CapsuleCollider2D bulletCollider; // Reference to the CapsuleCollider2D component
 
+    [SerializeField] private AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+
+        if (audioManager == null)
+        {
+            Debug.LogError("AudioManager is NOT found in the scene!");
+        }
+        else
+        {
+            Debug.Log("AudioManager successfully found using FindObjectOfType!");
+        }
+
+    }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,7 +48,9 @@ public class Enemy_Bullet : MonoBehaviour
             // Check if the bullet hits the player or something with the "Ground" layer
             if (collision.gameObject.CompareTag("Player") || collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
             {
+                 
                 Explode();  // Trigger explosion animation and stop the bullet
+                audioManager.PlaySFX(audioManager.cannonBulletimp);
                 hasExploded = true;  // Prevent multiple explosions
                 if (collision.gameObject.CompareTag("Player"))
                 {
@@ -52,6 +71,7 @@ public class Enemy_Bullet : MonoBehaviour
         Timer += Time.deltaTime;
         if (Timer > DTime && !hasExploded)
         {
+            audioManager.PlaySFX(audioManager.cannonBulletimp);
             Destroy(gameObject);  // Destroy the bullet if no collision occurred
             Timer = 0;
         }
@@ -62,6 +82,7 @@ public class Enemy_Bullet : MonoBehaviour
     {
         if (animator != null)
         {
+            audioManager.PlaySFX(audioManager.cannonBulletimp);
             animator.SetBool("IsExploding", true);  // Trigger the explosion animation via the IsExploding boolean parameter
         }
 
