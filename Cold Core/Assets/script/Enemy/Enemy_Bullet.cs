@@ -6,7 +6,7 @@ public class Enemy_Bullet : MonoBehaviour
 {
     [SerializeField] private int Force;
     [SerializeField] private float DTime;
-    [SerializeField] private int Damage;
+    [SerializeField] private int damage;
     private Rigidbody2D rb;
     private float Timer;
 
@@ -33,7 +33,10 @@ public class Enemy_Bullet : MonoBehaviour
             {
                 Explode();  // Trigger explosion animation and stop the bullet
                 hasExploded = true;  // Prevent multiple explosions
-                
+                if (collision.gameObject.CompareTag("Player"))
+                {
+                    collision.gameObject.GetComponent<Player_Health>().currentHealth -= damage;
+                }
                 // Disable the bullet's collider to prevent further collisions
                 if (bulletCollider != null)
                 {

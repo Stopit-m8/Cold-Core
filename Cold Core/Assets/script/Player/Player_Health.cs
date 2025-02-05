@@ -25,7 +25,8 @@ public class Player_Health : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.X))
         {
-            TakeDamage(20);
+            currentHealth -= 20;
+            DisplayDamage(currentHealth);
         }
         if (currentHealth > maxHealth)
         {
@@ -55,11 +56,11 @@ public class Player_Health : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy_Bullet"))
         {
-            TakeDamage(10);
+            DisplayDamage(currentHealth);
         }
         if (collision.gameObject.CompareTag("Insta_Kill"))
         {
-            TakeDamage(currentHealth);
+            DisplayDamage(currentHealth);
         }
         if (collision.gameObject.CompareTag("ItemHealth"))
         {
@@ -67,9 +68,8 @@ public class Player_Health : MonoBehaviour
         }
     }
 
-    void TakeDamage(int damage)
+    void DisplayDamage(int damage)
     {
-        currentHealth -= damage;
         healthBar.setHealth(currentHealth);
     }
 

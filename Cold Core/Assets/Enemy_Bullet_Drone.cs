@@ -9,6 +9,9 @@ public class Enemy_Bullet_Drone : MonoBehaviour
     private GameObject player;
     public float force;
     private Rigidbody2D rb;
+    private float bulletTimer;
+    [SerializeField] private float maxBulletTime;
+    [SerializeField] private int damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,22 @@ public class Enemy_Bullet_Drone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        bulletTimer += Time.deltaTime;
+        if (bulletTimer > maxBulletTime)
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<Player_Health>().currentHealth -= 20;
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.layer == 6)
+        {
+            Destroy(gameObject);
+        }
     }
 }
