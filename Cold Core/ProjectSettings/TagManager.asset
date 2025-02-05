@@ -12,6 +12,7 @@ TagManager:
   - Ground
   - ItemHealth
   - EnemyActive
+  - TankBody
   layers:
   - Default
   - TransparentFX
