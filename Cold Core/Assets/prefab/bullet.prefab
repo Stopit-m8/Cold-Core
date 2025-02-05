@@ -102,8 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 30
   explosion: {fileID: 9113066082174123614, guid: 2caa031b622595f4b8f1c525c0bef373, type: 3}
-  animator: {fileID: 6222675713786724707}
-  destroyBullet: 3
+  destroyBullet: 0.4
 --- !u!50 &8633485851873491721
 Rigidbody2D:
   serializedVersion: 4
