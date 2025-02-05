@@ -14,6 +14,15 @@ public class Enemy_Bullet : MonoBehaviour
 
     private bool hasExploded = false;  // Track whether the bullet has exploded
 
+    private CapsuleCollider2D bulletCollider; // Reference to the CapsuleCollider2D component
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        bulletCollider = GetComponent<CapsuleCollider2D>();  // Get the CapsuleCollider2D component
+        rb.velocity = transform.right * Force;  // Set bullet velocity
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Only trigger explosion once
@@ -24,14 +33,14 @@ public class Enemy_Bullet : MonoBehaviour
             {
                 Explode();  // Trigger explosion animation and stop the bullet
                 hasExploded = true;  // Prevent multiple explosions
+                
+                // Disable the bullet's collider to prevent further collisions
+                if (bulletCollider != null)
+                {
+                    bulletCollider.enabled = false;
+                }
             }
         }
-    }
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        rb.velocity = transform.right * Force;  // Set bullet velocity
     }
 
     void Update()
