@@ -37,7 +37,7 @@ public class Enemy_Bullet_Drone : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Player_Health>().currentHealth -= 20;
+            collision.gameObject.GetComponent<Player_Health>().currentHealth -= damage;
             Destroy(gameObject);
         }
         if (collision.gameObject.layer == 6)
