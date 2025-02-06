@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4944689161796538819}
   - component: {fileID: -8971871146860201997}
   - component: {fileID: 5657264623234677050}
+  - component: {fileID: 1685718264517711947}
   m_Layer: 8
   m_Name: drone_Bullet
   m_TagString: Enemy_Bullet
@@ -126,9 +127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14312c3687b6d314fb3095b6b062bed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
+  player: {fileID: 4673236397124180016, guid: 8380c6fcd1baa10488c3a60b1d977e6b, type: 3}
+  force: 15
   maxBulletTime: 2
-  damage: 5
+  damage: 8
 --- !u!70 &5657264623234677050
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -164,3 +166,24 @@ CapsuleCollider2D:
   m_Offset: {x: 0.02876924, y: 0.009589776}
   m_Size: {x: 2.490739, y: 0.84118706}
   m_Direction: 1
+--- !u!95 &1685718264517711947
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6509960120962072146}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9885b476e878e804bba1d3ec5cc9ec5d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

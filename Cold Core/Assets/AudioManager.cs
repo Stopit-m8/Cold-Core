@@ -24,12 +24,17 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip Victory;
     public AudioClip Engine;
+    public AudioClip DroneEngine;
+    public AudioClip DroneShoot;
+    public AudioClip Dronebulimp;
 
-    public void Start()
-    {
-        musicSource.clip = background;
-        musicSource.Play();
-    }
+public void Start()
+{
+    musicSource.clip = background;
+    musicSource.loop = true; // Enable looping
+    musicSource.Play(); // Play the sound
+}
+
 
     public void PlaySFX(AudioClip clip) { SFXsource.PlayOneShot(clip); }
 
