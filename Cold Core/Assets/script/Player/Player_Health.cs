@@ -7,7 +7,8 @@ public class Player_Health : MonoBehaviour
     public Player_HealthBar healthBar;
     public Animator animator;
     public DeathMenuController deathMenuController;
-    [SerializeField] private AudioManager audioManager;
+    [SerializeField] public AudioManager audioManager;
+    [SerializeField] AudioSource musicSource;
 
     private void Awake()
     {
@@ -51,6 +52,7 @@ public class Player_Health : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
+            musicSource.Stop();
             audioManager.PlaySFX(audioManager.death);
             animator.SetBool("PlayerIsDead", true);
 

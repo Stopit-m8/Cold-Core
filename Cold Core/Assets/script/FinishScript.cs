@@ -8,6 +8,7 @@ public class FinishScript : MonoBehaviour
     public GameObject victoryMenuUI;  // Reference to the Victory Menu UI
 
     [SerializeField] private AudioManager audioManager;
+    [SerializeField] AudioSource musicSource;
 
     private void Awake()
     {
@@ -21,7 +22,6 @@ public class FinishScript : MonoBehaviour
         {
             Debug.Log("AudioManager successfully found using FindObjectOfType!");
         }
-
     }
 
     void Start()
@@ -34,10 +34,13 @@ public class FinishScript : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            audioManager.PlaySFX(audioManager.Victory);
-            // Show the Victory Menu when the player reaches the finish line
-            victoryMenuUI.SetActive(true);
+            musicSource.Stop();
+            audioManager.PlaySFX(audioManager.Victory);  // Play victory sound effect
+            victoryMenuUI.SetActive(true);  // Show the Victory Menu
             Time.timeScale = 0f;  // Pause the game (optional, can remove if you don't want to pause)
+
+            // Stop the background music
+            
         }
     }
 }

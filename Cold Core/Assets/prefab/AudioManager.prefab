@@ -312,7 +312,7 @@ MonoBehaviour:
   bulletImpact: {fileID: 8300000, guid: 6b91426cd20317f4ab61571c08651e15, type: 3}
   getHit: {fileID: 8300000, guid: 2431fb2d69a589c459ef51f05775fc56, type: 3}
   heal: {fileID: 8300000, guid: 1f66556e9a897f94fae72b1192d50e51, type: 3}
-  tankExplode: {fileID: 8300000, guid: edde0dfa837d2f141a0c4955be125f5b, type: 3}
-  cannonBulletimp: {fileID: 8300000, guid: 3f615f1f9ecb558429073cad6eb68e2b, type: 3}
-  Tankshoot: {fileID: 8300000, guid: 82148e2e4344c6a4ab0a893cacd7f24a, type: 3}
+  tankExplode: {fileID: 8300000, guid: 85fea62dc2a60474185a06eeb48e2919, type: 3}
+  cannonBulletimp: {fileID: 8300000, guid: 45413b4a1ca27834da42c859229c2088, type: 3}
+  Tankshoot: {fileID: 8300000, guid: 9b6c0860adc5dcf4d8d7ed6d49864483, type: 3}
   Victory: {fileID: 8300000, guid: b053102bdd7d31c47b296c5adb97ee7e, type: 3}
