@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Player_Health : MonoBehaviour
 {
-    public int maxHealth = 100;
+    public int maxHealth = 250;
     public int currentHealth;
     public Player_HealthBar healthBar;
     public Animator animator;
@@ -36,10 +36,7 @@ public class Player_Health : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            Heal(20);
-        }
+
         if (Input.GetKeyDown(KeyCode.X))
         {
             TakeDamage(20);
@@ -48,6 +45,8 @@ public class Player_Health : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+
+
 
         if (currentHealth <= 0)
         {
@@ -70,6 +69,8 @@ public class Player_Health : MonoBehaviour
         }
     }
 
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy_Bullet"))
@@ -85,7 +86,7 @@ public class Player_Health : MonoBehaviour
         if (collision.gameObject.CompareTag("ItemHealth"))
         {
             audioManager.PlaySFX(audioManager.heal);
-            Heal(20);
+            Heal(45);
         }
     }
 

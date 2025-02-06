@@ -581,6 +581,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413093486}
   m_CullTransparentMesh: 1
+--- !u!1001 &416933968
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2289709838979529735, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091414107189115956, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.804701
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091414107189115956, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.53307843
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091414107189115956, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.42980114
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091414107189115956, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091414107189115956, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091414107189115956, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091414107189115956, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091414107189115956, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091414107189115956, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091414107189115956, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+--- !u!82 &416933969 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4164804125888482765, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+  m_PrefabInstance: {fileID: 416933968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &416933970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2494108902258863557, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}
+  m_PrefabInstance: {fileID: 416933968}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811c363e1e4f1d34d9660e3d6e01f69e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &424387262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4854,6 +4927,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1098214542}
     - target: {fileID: 6929554735615791735, guid: 8380c6fcd1baa10488c3a60b1d977e6b, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 416933969}
+    - target: {fileID: 6929554735615791735, guid: 8380c6fcd1baa10488c3a60b1d977e6b, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 416933970}
+    - target: {fileID: 6929554735615791735, guid: 8380c6fcd1baa10488c3a60b1d977e6b, type: 3}
       propertyPath: deathMenuController
       value: 
       objectReference: {fileID: 396575440}
@@ -6444,6 +6525,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryMenuUI: {fileID: 1465716867}
+  audioManager: {fileID: 0}
+  musicSource: {fileID: 0}
 --- !u!61 &1994459337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6875,6 +6958,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 8997282039892008229}
+  - {fileID: 416933968}
   - {fileID: 1101386513}
   - {fileID: 6986992437250594100}
   - {fileID: 1753300125}

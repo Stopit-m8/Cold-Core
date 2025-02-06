@@ -139,6 +139,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+  audioManager: {fileID: 0}
   isFacingRight: 1
   animator: {fileID: 2420055853947243710}
   isDead: 0
@@ -175,11 +176,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a98917dc54ca04f8cfc68d94e4d867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 180
   currentHealth: 0
   healthBar: {fileID: 0}
   animator: {fileID: 2420055853947243710}
   deathMenuController: {fileID: 0}
+  audioManager: {fileID: 0}
+  musicSource: {fileID: 0}
 --- !u!61 &4077816790021006493
 BoxCollider2D:
   m_ObjectHideFlags: 0

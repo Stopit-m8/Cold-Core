@@ -164,8 +164,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Force: 10
   DTime: 3
-  damage: 20
+  damage: 18
   animator: {fileID: -5230363935126952360}
+  audioManager: {fileID: 0}
 --- !u!95 &-5230363935126952360
 Animator:
   serializedVersion: 5

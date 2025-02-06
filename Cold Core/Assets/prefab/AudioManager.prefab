@@ -309,10 +309,11 @@ MonoBehaviour:
   walking: {fileID: 8300000, guid: 1ada06e0e7fcb6241a251f222c0dfce5, type: 3}
   shooting: {fileID: 8300000, guid: b3cbccd142c9f2e4abd5b315d2c2bb03, type: 3}
   jumping: {fileID: 8300000, guid: b20d497a79d20b14a8158d23c91dc8bc, type: 3}
-  bulletImpact: {fileID: 8300000, guid: 6b91426cd20317f4ab61571c08651e15, type: 3}
+  bulletImpact: {fileID: 0}
   getHit: {fileID: 8300000, guid: 2431fb2d69a589c459ef51f05775fc56, type: 3}
   heal: {fileID: 8300000, guid: 1f66556e9a897f94fae72b1192d50e51, type: 3}
   tankExplode: {fileID: 8300000, guid: 85fea62dc2a60474185a06eeb48e2919, type: 3}
   cannonBulletimp: {fileID: 8300000, guid: 45413b4a1ca27834da42c859229c2088, type: 3}
   Tankshoot: {fileID: 8300000, guid: 9b6c0860adc5dcf4d8d7ed6d49864483, type: 3}
   Victory: {fileID: 8300000, guid: b053102bdd7d31c47b296c5adb97ee7e, type: 3}
+  Engine: {fileID: 0}

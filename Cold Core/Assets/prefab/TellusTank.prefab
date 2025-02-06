@@ -49,6 +49,7 @@ MonoBehaviour:
   Bullet: {fileID: 2985009427306427934, guid: 4db8fd3c91fca16409ecd297fde6f310, type: 3}
   FireRate: 1
   FireRateTimer: 0
+  audioManager: {fileID: 0}
 --- !u!1 &2351720569574958119
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,3 +457,5 @@ MonoBehaviour:
   item: {fileID: 6490715458084336178, guid: 46a73e92f9e86ae4282e249bfbba867d, type: 3}
   animator: {fileID: 756678680718844399}
   deathAnimationClip: {fileID: 7400000, guid: a0d613c540ea833469b9754c4a887f87, type: 2}
+  audioManager: {fileID: 0}
+  engineSource: {fileID: 0}

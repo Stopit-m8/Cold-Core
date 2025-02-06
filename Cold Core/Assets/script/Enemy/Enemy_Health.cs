@@ -49,6 +49,11 @@ public class Enemy_Health : MonoBehaviour
 
     void Update()
     {
+
+        if (eCurrentHealth > 0)
+        {
+            audioManager.PlaySFX(audioManager.Engine);
+        }
         if (eCurrentHealth <= 0)
         {
             if (!animator.GetBool("tankdead"))
