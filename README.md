@@ -29,11 +29,8 @@ My Contribution (Stopit-m8):
 
 ## ✨ Features
 
-- [Feature / mechanic]
-- [Feature / mechanic]
-- [Feature / mechanic]
-- [Feature / mechanic]
-- [Feature / mechanic]
+- Local coop up to 4 players
+- Ability cards
 
 ---
 
@@ -52,13 +49,3 @@ My Contribution (Stopit-m8):
 ### 📁 Game Flow
 
 (insert gambar game flow)
-
----
-
-## 🔗 Links
-
-- [🎮 Play / Download](YOUR_LINK)
-- [🎥 Gameplay Video](YOUR_LINK)
-- [📁 Repository](YOUR_LINK)
-
-
