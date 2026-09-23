@@ -1,6 +1,6 @@
 # 🎮 Cold Core
 
-![Game Banner](./Images/ColdCore.gif)
+![Game Banner](Images/ColdCore.gif)
 
 ---
 
