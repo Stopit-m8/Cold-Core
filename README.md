@@ -1,12 +1,12 @@
-# 🎮 Tan-Go
+# 🎮 Cold Core
 
-![Game Banner](./Images/TanGo.gif)
+![Game Banner](./Images/ColdCore.gif)
 
 ---
 
 ## 📖 About the Game
 
-**Tan-Go** is A 2D local multiplayer boardgame that incorporates Japanese Hiragana as a movement system, requiring players to recognize and use Hiragana words to navigate the game board.
+**Cold Core** is A 2D Platformer Action Shooter, Where players play as Rogue AI Military Mech
 
 ---
 
@@ -14,23 +14,24 @@
 
 | Name | Role |
 |---|---|
-| Stopit-m8 | Game Designer |
+| KrapuRED | Game Designer |
 | raymondbenedict2802405245 | Game Artist |
 | Stopit-m8 | Game Programmer |
 | RB2109 | Sound Designer |
 
 My Contribution (Stopit-m8):
-- Created all of the game system and features
-- Created database system
-- Created english to hiragana syllabel
-- Designed the conversion from physical board game to digital game
+- Created player's movement and shoot logic
+- Created enemy's movement and shoot logic
+- Created health logic
+- Created item drop logic
+- Created item interaction logic
 
 ---
 
 ## ✨ Features
 
-- Local coop up to 4 players
-- Ability cards
+- 360° shooting range
+- 3 types of enemies
 
 ---
 
