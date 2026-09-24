@@ -41,9 +41,14 @@ My Contribution (Stopit-m8):
 
 ---
 
-### 📁 Module and Features
+### ⚙️ Module and Features
 
-(jelasin layer module graph)
+| Module | Features | Description |
+|---|---|---|
+| **Player System** | Movement, Input, Health, Damage | Handles player movement, input, health logic, and damage logic |
+| **Enemy System** | Movement, Health, Damage, Drops | Handles enemy movement, health logic, damage logic, and item drop logic |
+| **UI System** | Menus, HUD, Animation | Handles UI functionality and transitions. |
+| **Audio System** | BGM, SFX | Manages music and sound effects. |
 
 ---
 
