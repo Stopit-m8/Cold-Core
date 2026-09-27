@@ -37,7 +37,7 @@ My Contribution (Stopit-m8):
 
 ### ⚙️ Layer / Module Design
 
-(insert pic)
+![Project Diagram](Cold_Core/Images/ModuleDesignColdCore.drawio.svg)
 
 ---
 
