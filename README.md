@@ -54,4 +54,4 @@ My Contribution (Stopit-m8):
 
 ### 📁 Game Flow
 
-![Project Diagram](/Images/GameFlowTPJumper.drawio.svg)
+![Project Diagram](Cold_Core/Images/GameFlowColdCore.drawio.svg)
