@@ -592,6 +592,7 @@ GameObject:
   - component: {fileID: 150647157}
   - component: {fileID: 150647156}
   - component: {fileID: 150647155}
+  - component: {fileID: 150647158}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -701,6 +702,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150647153}
   m_CullTransparentMesh: 1
+--- !u!114 &150647158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150647153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31b4c6bcbacb7a41a08935758431587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleSprite: {fileID: 21300000, guid: 41362d8500304714a9f35be7f902cf5a, type: 3}
+  _hoverSprite: {fileID: 21300000, guid: 41db937e8b33de340b9f932dff138d30, type: 3}
+  _pressedSprite: {fileID: 21300000, guid: e2d1ba45ded480b4f923dc84e6d88bb1, type: 3}
 --- !u!1 &196896420
 GameObject:
   m_ObjectHideFlags: 0
@@ -2327,6 +2343,7 @@ GameObject:
   - component: {fileID: 694556461}
   - component: {fileID: 694556460}
   - component: {fileID: 694556459}
+  - component: {fileID: 694556462}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -2436,6 +2453,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694556457}
   m_CullTransparentMesh: 1
+--- !u!114 &694556462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694556457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31b4c6bcbacb7a41a08935758431587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleSprite: {fileID: 21300000, guid: d5adc12cf33eb164182434d5491261cf, type: 3}
+  _hoverSprite: {fileID: 21300000, guid: f2cbf7496a93ca94c82e8cf8b964e67a, type: 3}
+  _pressedSprite: {fileID: 21300000, guid: a99abe15538eea245af90bc9878c2f53, type: 3}
 --- !u!4 &766179053 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8476231213595296825, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
@@ -2986,14 +3018,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 396723398484872012, guid: 3d0b6ea755d51f941848bdc1358b5a3f, type: 3}
-      propertyPath: audioManager
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 396723398484872012, guid: 3d0b6ea755d51f941848bdc1358b5a3f, type: 3}
-      propertyPath: deathAnimationClip
-      value: 
-      objectReference: {fileID: 7400000, guid: a0d613c540ea833469b9754c4a887f87, type: 2}
     - target: {fileID: 2850066605995169713, guid: 3d0b6ea755d51f941848bdc1358b5a3f, type: 3}
       propertyPath: m_Name
       value: TellusTank
@@ -4698,6 +4722,7 @@ GameObject:
   - component: {fileID: 1633950636}
   - component: {fileID: 1633950635}
   - component: {fileID: 1633950634}
+  - component: {fileID: 1633950637}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -4819,6 +4844,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633950632}
   m_CullTransparentMesh: 1
+--- !u!114 &1633950637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633950632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31b4c6bcbacb7a41a08935758431587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleSprite: {fileID: 0}
+  _hoverSprite: {fileID: 0}
+  _pressedSprite: {fileID: 0}
 --- !u!114 &1670377194 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2494108902258863557, guid: 212db3e6ac95aec4e971faaa88fa1822, type: 3}

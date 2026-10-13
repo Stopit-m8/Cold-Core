@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 1818490271208282805}
   - component: {fileID: 8607051592503977595}
   - component: {fileID: 7602308527863706430}
+  - component: {fileID: 5442028795184654172}
   m_Layer: 8
   m_Name: Drone
   m_TagString: Enemy
@@ -156,7 +157,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8db24cb6284b8114c871e6823aef83c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -231,6 +232,7 @@ MonoBehaviour:
   PointB: {fileID: 2761641639227640876}
   PointC: {fileID: 5502193799078023142}
   speed: 2
+  audioManager: {fileID: 0}
 --- !u!114 &1818490271208282805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +267,7 @@ MonoBehaviour:
   bulletPos: {fileID: 1464451321534471989}
   timerMax: 2
   LOS: 100
+  audioManager: {fileID: 0}
 --- !u!95 &7602308527863706430
 Animator:
   serializedVersion: 5
@@ -286,6 +289,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5442028795184654172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2942933941418901901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4432ca27d6cd1c84691204d5638dc3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blinkDecaySpeed: 7.5
 --- !u!1 &3052944068330222399
 GameObject:
   m_ObjectHideFlags: 0

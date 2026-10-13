@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 642172288}
   - component: {fileID: 642172287}
   - component: {fileID: 642172286}
+  - component: {fileID: 642172290}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -360,6 +361,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &642172290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642172285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db19110fd75856d40a08c7b177b11940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &755613037
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,6 +587,7 @@ GameObject:
   - component: {fileID: 1094468950}
   - component: {fileID: 1094468949}
   - component: {fileID: 1094468948}
+  - component: {fileID: 1094468951}
   m_Layer: 5
   m_Name: play
   m_TagString: Untagged
@@ -645,7 +659,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1376830274}
+      - m_Target: {fileID: 642172290}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
@@ -695,6 +709,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094468946}
   m_CullTransparentMesh: 1
+--- !u!114 &1094468951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094468946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31b4c6bcbacb7a41a08935758431587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleSprite: {fileID: 21300000, guid: 4e3d0c62e310b104891ed1b5493817c8, type: 3}
+  _hoverSprite: {fileID: 21300000, guid: de9c70ce96257e84585e7a8c72890ac7, type: 3}
+  _pressedSprite: {fileID: 21300000, guid: c34b63bcf9d32b048bf76a552800c0f1, type: 3}
 --- !u!1 &1325920528
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +810,6 @@ GameObject:
   - component: {fileID: 1376830273}
   - component: {fileID: 1376830272}
   - component: {fileID: 1376830271}
-  - component: {fileID: 1376830274}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -863,18 +891,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1376830274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376830270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db19110fd75856d40a08c7b177b11940, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1640513135
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,6 +903,7 @@ GameObject:
   - component: {fileID: 1640513139}
   - component: {fileID: 1640513138}
   - component: {fileID: 1640513137}
+  - component: {fileID: 1640513140}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -958,7 +975,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1376830274}
+      - m_Target: {fileID: 642172290}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -1008,6 +1025,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640513135}
   m_CullTransparentMesh: 1
+--- !u!114 &1640513140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640513135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31b4c6bcbacb7a41a08935758431587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleSprite: {fileID: 21300000, guid: f1f85e4ee3a97af4d8fb16bb76feb83b, type: 3}
+  _hoverSprite: {fileID: 21300000, guid: 812a282c016857c41938f558caf5721b, type: 3}
+  _pressedSprite: {fileID: 21300000, guid: 3114d74c69ea8334282c6092aacaa66d, type: 3}
 --- !u!1 &1829171714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,6 +1338,11 @@ MonoBehaviour:
   tankExplode: {fileID: 0}
   cannonBulletimp: {fileID: 0}
   Tankshoot: {fileID: 0}
+  Victory: {fileID: 0}
+  Engine: {fileID: 0}
+  DroneEngine: {fileID: 0}
+  DroneShoot: {fileID: 0}
+  Dronebulimp: {fileID: 0}
 --- !u!4 &2014378868
 Transform:
   m_ObjectHideFlags: 0

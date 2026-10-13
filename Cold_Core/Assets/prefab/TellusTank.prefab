@@ -146,7 +146,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.0565286, y: 0.046880722}
+  m_Offset: {x: 14.209584, y: 0.046880722}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -157,7 +157,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.179448, y: 0.9407778}
+  m_Size: {x: 27.48556, y: 0.9407778}
   m_EdgeRadius: 0
 --- !u!114 &1028270032827702648
 MonoBehaviour:
@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 4022728271175311019}
   - component: {fileID: 1675783549955677084}
   - component: {fileID: 396723398484872012}
+  - component: {fileID: 7116824474552451540}
   m_Layer: 8
   m_Name: Tank
   m_TagString: Enemy
@@ -324,7 +325,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8db24cb6284b8114c871e6823aef83c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -429,7 +430,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6701327880837780482}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dd4227d993678a4186c4b3e5c507412, type: 3}
   m_Name: 
@@ -458,4 +459,16 @@ MonoBehaviour:
   animator: {fileID: 756678680718844399}
   deathAnimationClip: {fileID: 7400000, guid: a0d613c540ea833469b9754c4a887f87, type: 2}
   audioManager: {fileID: 0}
-  engineSource: {fileID: 0}
+--- !u!114 &7116824474552451540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6701327880837780482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4432ca27d6cd1c84691204d5638dc3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blinkDecaySpeed: 7.5

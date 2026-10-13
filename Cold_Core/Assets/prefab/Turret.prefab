@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 1471777012806169086}
   - component: {fileID: 2411754164439508762}
   - component: {fileID: 1236399431486556360}
+  - component: {fileID: 2258021757076764835}
   m_Layer: 8
   m_Name: Tur
   m_TagString: Enemy
@@ -212,7 +213,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8db24cb6284b8114c871e6823aef83c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -261,6 +262,7 @@ MonoBehaviour:
   item: {fileID: 6490715458084336178, guid: 46a73e92f9e86ae4282e249bfbba867d, type: 3}
   animator: {fileID: 1236399431486556360}
   deathAnimationClip: {fileID: 7400000, guid: 83fe889cbaf1e6447ac732914875150f, type: 2}
+  audioManager: {fileID: 0}
 --- !u!114 &2411754164439508762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,3 +297,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2258021757076764835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7362764098245586695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4432ca27d6cd1c84691204d5638dc3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blinkDecaySpeed: 7.5

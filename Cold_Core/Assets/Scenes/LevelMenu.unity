@@ -575,6 +575,7 @@ GameObject:
   - component: {fileID: 155175279}
   - component: {fileID: 155175278}
   - component: {fileID: 155175277}
+  - component: {fileID: 155175280}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -696,6 +697,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155175275}
   m_CullTransparentMesh: 1
+--- !u!114 &155175280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155175275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31b4c6bcbacb7a41a08935758431587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleSprite: {fileID: 21300000, guid: d5adc12cf33eb164182434d5491261cf, type: 3}
+  _hoverSprite: {fileID: 21300000, guid: f2cbf7496a93ca94c82e8cf8b964e67a, type: 3}
+  _pressedSprite: {fileID: 21300000, guid: a99abe15538eea245af90bc9878c2f53, type: 3}
 --- !u!1 &348384022
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +754,11 @@ MonoBehaviour:
   tankExplode: {fileID: 0}
   cannonBulletimp: {fileID: 0}
   Tankshoot: {fileID: 0}
+  Victory: {fileID: 0}
+  Engine: {fileID: 0}
+  DroneEngine: {fileID: 0}
+  DroneShoot: {fileID: 0}
+  Dronebulimp: {fileID: 0}
 --- !u!4 &348384024
 Transform:
   m_ObjectHideFlags: 0
@@ -1133,6 +1154,7 @@ GameObject:
   - component: {fileID: 1878827070}
   - component: {fileID: 1878827069}
   - component: {fileID: 1878827068}
+  - component: {fileID: 1878827071}
   m_Layer: 5
   m_Name: Level 2
   m_TagString: Untagged
@@ -1254,6 +1276,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878827066}
   m_CullTransparentMesh: 1
+--- !u!114 &1878827071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878827066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31b4c6bcbacb7a41a08935758431587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleSprite: {fileID: 0}
+  _hoverSprite: {fileID: 0}
+  _pressedSprite: {fileID: 0}
 --- !u!1 &1893159719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1303,7 @@ GameObject:
   - component: {fileID: 1893159723}
   - component: {fileID: 1893159722}
   - component: {fileID: 1893159721}
+  - component: {fileID: 1893159724}
   m_Layer: 5
   m_Name: Level 1
   m_TagString: Untagged
@@ -1387,6 +1425,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893159719}
   m_CullTransparentMesh: 1
+--- !u!114 &1893159724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893159719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31b4c6bcbacb7a41a08935758431587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleSprite: {fileID: 0}
+  _hoverSprite: {fileID: 0}
+  _pressedSprite: {fileID: 0}
 --- !u!1 &1898024856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,6 +1580,7 @@ GameObject:
   - component: {fileID: 1948126953}
   - component: {fileID: 1948126952}
   - component: {fileID: 1948126951}
+  - component: {fileID: 1948126954}
   m_Layer: 5
   m_Name: Level 3
   m_TagString: Untagged
@@ -1648,6 +1702,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948126949}
   m_CullTransparentMesh: 1
+--- !u!114 &1948126954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948126949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31b4c6bcbacb7a41a08935758431587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleSprite: {fileID: 0}
+  _hoverSprite: {fileID: 0}
+  _pressedSprite: {fileID: 0}
 --- !u!1 &1949958755
 GameObject:
   m_ObjectHideFlags: 0

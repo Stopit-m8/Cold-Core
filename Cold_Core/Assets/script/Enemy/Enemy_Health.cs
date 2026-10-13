@@ -15,6 +15,8 @@ public class Enemy_Health : MonoBehaviour
     // Reference to the death animation clip
     public AnimationClip deathAnimationClip;
 
+    private SpriteBlink _spriteBlink;
+
    [SerializeField] private AudioManager audioManager;
 
     private void Awake()
@@ -37,12 +39,14 @@ public class Enemy_Health : MonoBehaviour
         eCurrentHealth = eMaxHealth;
         rb = GetComponent<Rigidbody2D>();
         tankPatrolScript = GetComponent<Tank_Patrol>(); // Reference to Tank_Patrol script
+        _spriteBlink = GetComponent<SpriteBlink>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
+            _spriteBlink.Blink();
             TakeDamage(9);
         }
     }
