@@ -5,14 +5,14 @@ using UnityEngine;
 public class SpriteBlink : MonoBehaviour
 {
     [SerializeField] private float blinkDecaySpeed = 1f;
+    [SerializeField] private Color blinkColor = Color.white;
 
-    private SpriteRenderer _spriteRenderer;
+    [SerializeField] private SpriteRenderer[] spriteRenderers;
     private MaterialPropertyBlock _materialPropertyBlock;
     private float _blinkFactor;
 
     private void Start()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
         _materialPropertyBlock = new MaterialPropertyBlock();
     }
 
@@ -39,8 +39,13 @@ public class SpriteBlink : MonoBehaviour
 
     private void ApplyBlinkFactor()
     {
-        _spriteRenderer.GetPropertyBlock(_materialPropertyBlock);
-        _materialPropertyBlock.SetFloat(name: "_BlinkFactor", _blinkFactor);
-        _spriteRenderer.SetPropertyBlock(_materialPropertyBlock);
+        foreach (var renderer in spriteRenderers)
+        {
+            renderer.GetPropertyBlock(_materialPropertyBlock);
+            _materialPropertyBlock.SetColor("_BlinkColor", blinkColor);
+            _materialPropertyBlock.SetFloat(name: "_BlinkFactor", _blinkFactor);
+            renderer.SetPropertyBlock(_materialPropertyBlock);
+        }
+        
     }
 }

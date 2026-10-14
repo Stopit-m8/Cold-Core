@@ -472,3 +472,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blinkDecaySpeed: 7.5
+  blinkColor: {r: 1, g: 1, b: 1, a: 1}
+  spriteRenderers:
+  - {fileID: 4969371999764566711}

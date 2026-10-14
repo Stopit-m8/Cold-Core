@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6929554735615791735}
   - component: {fileID: 4077816790021006493}
   - component: {fileID: 4402858597385385348}
+  - component: {fileID: 7014384890320289852}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -36,7 +37,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3773742107038390846}
+  - {fileID: 8824713284113459256}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &4189651915544363382
@@ -86,7 +87,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8db24cb6284b8114c871e6823aef83c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -104,8 +105,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 672023213
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 900529208, guid: 8c406ac94c2fdce46b151fa52868b290, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -263,7 +264,24 @@ CapsuleCollider2D:
   m_Offset: {x: -0.12275158, y: -0.49271762}
   m_Size: {x: 0.5050716, y: 0.04994101}
   m_Direction: 1
---- !u!1001 &4755406563359333895
+--- !u!114 &7014384890320289852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4673236397124180016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4432ca27d6cd1c84691204d5638dc3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blinkDecaySpeed: 7.5
+  blinkColor: {r: 0.28532666, g: 0.7132075, b: 0.2462584, a: 0.8117647}
+  spriteRenderers:
+  - {fileID: 4149509956117868522}
+  - {fileID: 4542377372570177653}
+--- !u!1001 &1141155197828852737
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -282,7 +300,7 @@ PrefabInstance:
     - target: {fileID: 1451693164643336767, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
       propertyPath: bulletTransform
       value: 
-      objectReference: {fileID: 3773742107038390846}
+      objectReference: {fileID: 8824713284113459256}
     - target: {fileID: 1451693164643336767, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
       propertyPath: timeBeetweenFire
       value: 0.15
@@ -293,7 +311,11 @@ PrefabInstance:
       objectReference: {fileID: 3791508533581542520}
     - target: {fileID: 2088452077352545717, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
       propertyPath: m_Name
-      value: MG
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088452077352545717, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3521804722685918324, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
       propertyPath: m_Size.x
@@ -308,9 +330,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2079549142, guid: 7207d4baf0f513a42bd4888129168fd9, type: 3}
     - target: {fileID: 3521804722685918324, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521804722685918324, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3521804722685918324, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8db24cb6284b8114c871e6823aef83c2, type: 2}
     - target: {fileID: 8476231213595296825, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.14665101
@@ -368,8 +398,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
---- !u!4 &3773742107038390846 stripped
+--- !u!212 &4542377372570177653 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3521804722685918324, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
+  m_PrefabInstance: {fileID: 1141155197828852737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8824713284113459256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8476231213595296825, guid: f0d6f54c5e94ac64c9c84508c68e59ed, type: 3}
-  m_PrefabInstance: {fileID: 4755406563359333895}
+  m_PrefabInstance: {fileID: 1141155197828852737}
   m_PrefabAsset: {fileID: 0}

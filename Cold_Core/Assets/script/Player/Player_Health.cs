@@ -7,6 +7,7 @@ public class Player_Health : MonoBehaviour
     public Player_HealthBar healthBar;
     public Animator animator;
     public DeathMenuController deathMenuController;
+    private SpriteBlink _spriteBlink;
     [SerializeField] public AudioManager audioManager;
     [SerializeField] AudioSource musicSource;
 
@@ -29,6 +30,7 @@ public class Player_Health : MonoBehaviour
 
     void Start()
     {
+        _spriteBlink = GetComponent<SpriteBlink>();
         currentHealth = maxHealth;
         healthBar.setMaxHealth(maxHealth);
         playerMovement = GetComponent<EXPPlayer_Movement>();  // Get the Player Movement component
@@ -36,11 +38,6 @@ public class Player_Health : MonoBehaviour
 
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            TakeDamage(20);
-        }
         if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
@@ -86,6 +83,7 @@ public class Player_Health : MonoBehaviour
         if (collision.gameObject.CompareTag("ItemHealth"))
         {
             audioManager.PlaySFX(audioManager.heal);
+            _spriteBlink.Blink();
             Heal(45);
         }
     }
