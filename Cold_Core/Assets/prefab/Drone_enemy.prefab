@@ -248,6 +248,7 @@ MonoBehaviour:
   eMaxHealth: 75
   eCurrentHealth: 0
   item: {fileID: 6490715458084336178, guid: 46a73e92f9e86ae4282e249bfbba867d, type: 3}
+  deathEffect: {fileID: 8194992990867289339, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
   animator: {fileID: 7602308527863706430}
   deathAnimationClip: {fileID: 7400000, guid: 145afc250e75a1649b0383bfe380ae28, type: 2}
   audioManager: {fileID: 0}

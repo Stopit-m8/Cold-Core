@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EXPPlayer_Movement : MonoBehaviour
@@ -17,6 +18,8 @@ public class EXPPlayer_Movement : MonoBehaviour
     [SerializeField] private CapsuleCollider2D groundCheck;
     [SerializeField] private bool isGrounded;
     [SerializeField] private LayerMask groundMask;
+    //[SerializeField] GameObject smokeTrail;
+    [SerializeField] private ParticleSystem smokeTrail;
 
     [SerializeField] private AudioManager audioManager;
 
@@ -102,6 +105,26 @@ public class EXPPlayer_Movement : MonoBehaviour
         }
     }
 
+    //private List<GameObject> trailPool = new List<GameObject>();
+
+    //private GameObject GetTrail(Vector3 position, Quaternion rotation)
+    //{
+    //    foreach (GameObject obj in trailPool)
+    //    {
+    //        if (!obj.activeInHierarchy)
+    //        {
+    //            obj.transform.SetPositionAndRotation(position, rotation);
+    //            obj.SetActive(true);
+    //            return obj;
+    //        }
+    //    }
+
+    //    GameObject newTrail = Instantiate(smokeTrail, position, rotation);
+    //    trailPool.Add(newTrail);
+
+    //    return newTrail;
+    //}
+
     void GetInput()
     {
         xInput = Input.GetAxis("Horizontal");
@@ -113,16 +136,24 @@ public class EXPPlayer_Movement : MonoBehaviour
         if (Mathf.Abs(xInput) > 0)
         {
             body.velocity = new Vector2(xInput * groundSpeed, body.velocity.y);
+            if (isGrounded)
+            {
+                if (!smokeTrail.isPlaying)
+                    smokeTrail.Play();
+            }
+            else
+            {
+                smokeTrail.Stop();
+            }
 
-            // Footstep sound on every step (check if enough time has passed)
-            stepTimer += Time.deltaTime;
+                // Footstep sound on every step (check if enough time has passed)
+                stepTimer += Time.deltaTime;
 
             if (stepTimer >= stepInterval && isGrounded)
             {
                 // Play footstep sound when enough time has passed
                 walkAudioSource.clip = audioManager.walking;  // Assign the footstep clip
                 walkAudioSource.Play();  // Play the sound
-
                 stepTimer = 0f; // Reset the timer after playing the sound
             }
 
@@ -135,6 +166,7 @@ public class EXPPlayer_Movement : MonoBehaviour
         else
         {
             // Stop the walking sound when the player stops moving
+            smokeTrail.Stop();
             if (walkAudioSource.isPlaying || !isGrounded)
             {
                 walkAudioSource.Stop();

@@ -31,9 +31,10 @@ public class SpriteBlink : MonoBehaviour
         ApplyBlinkFactor();
     }
 
-    public void Blink()
+    public void Blink(Color color)
     {
         _blinkFactor = 1f;
+        blinkColor = color;
         ApplyBlinkFactor();
     }
 

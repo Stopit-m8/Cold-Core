@@ -6,6 +6,7 @@ public class Enemy_Health : MonoBehaviour
     public int eMaxHealth = 150;
     public int eCurrentHealth;
     [SerializeField] private GameObject item;
+    [SerializeField] private GameObject deathEffect;
 
     public Animator animator;
     private Rigidbody2D rb;
@@ -46,7 +47,7 @@ public class Enemy_Health : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            _spriteBlink.Blink();
+            _spriteBlink.Blink(Color.white);
             TakeDamage(9);
         }
     }
@@ -65,6 +66,7 @@ public class Enemy_Health : MonoBehaviour
                 audioManager.PlaySFX(audioManager.tankExplode);
                 animator.SetBool("tankdead", true);  // Trigger death animation
                 eCurrentHealth = 0;
+                Instantiate(deathEffect, transform.position, Quaternion.identity);
                 Instantiate(item, transform.position, Quaternion.identity);
 
                 // Disable Tank_Patrol script and freeze Rigidbody

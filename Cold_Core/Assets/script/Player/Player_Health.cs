@@ -9,6 +9,7 @@ public class Player_Health : MonoBehaviour
     public DeathMenuController deathMenuController;
     private SpriteBlink _spriteBlink;
     [SerializeField] public AudioManager audioManager;
+    [SerializeField] public GameObject deathEffect;
     [SerializeField] AudioSource musicSource;
 
     private void Awake()
@@ -45,8 +46,10 @@ public class Player_Health : MonoBehaviour
 
 
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && playerMovement.isDead == false)
         {
+            GameObject deathInstantiate = Instantiate(deathEffect, transform.position, Quaternion.identity, transform);
+            deathInstantiate.layer = LayerMask.NameToLayer("player");
             currentHealth = 0;
             musicSource.Stop();
             audioManager.PlaySFX(audioManager.death);
@@ -83,7 +86,7 @@ public class Player_Health : MonoBehaviour
         if (collision.gameObject.CompareTag("ItemHealth"))
         {
             audioManager.PlaySFX(audioManager.heal);
-            _spriteBlink.Blink();
+            _spriteBlink.Blink(Color.green);
             Heal(45);
         }
     }
@@ -92,6 +95,7 @@ public class Player_Health : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
+        _spriteBlink.Blink(Color.white);
     }
 
     void Heal(int heal)
