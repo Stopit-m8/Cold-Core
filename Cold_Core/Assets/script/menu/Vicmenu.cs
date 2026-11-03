@@ -7,6 +7,6 @@ public class VictoryMenuController : MonoBehaviour
     {
         // Unpause the game and load the level menu (Scene index 2)
         Time.timeScale = 1f;  // Ensure the game is unpaused
-        SceneManager.LoadScene(3);  // Load the Level Menu scene (Scene 2)
+        SceneManager.LoadScene(1);  // Load the Level Menu scene (Scene 2)
     }
 }

@@ -52,6 +52,6 @@ public class PauseMenu : MonoBehaviour
     void ExitToMenu()
     {
         Time.timeScale = 1f;  // Ensure the game time resumes before loading the scene
-        SceneManager.LoadScene(3);  // Load the level menu scene (make sure the correct scene index is used)
+        SceneManager.LoadScene(1);  // Load the level menu scene (make sure the correct scene index is used)
     }
 }
